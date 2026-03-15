@@ -22,6 +22,8 @@ Drop in a CSV of leads. The engine:
 
 ## 🏗️ Architecture
 
+![GTM Agentic AI Engine](GTM%20AI%20AGENTIC%20ENGINE.png)
+
 ```
 Raw CRM Data (CSV) + Transcripts (.txt / .json)
         │
