@@ -1,0 +1,60 @@
+GONG CALL RECORDING — AUTO TRANSCRIPT
+======================================
+call_id: gng_4492abc773
+date: 2024-02-20T16:15:22Z
+duration_seconds: 2718
+participants: ["jamie.l@leandata.com", "priya.patel@cloudnine.com", "raj.s@cloudnine.com"]
+sentiment_score: 0.91
+talk_ratio: {"rep": 0.29, "prospect": 0.71}
+======================================
+
+[00:00:06] jamie.l: hi Priya, hi Raj, thanks for making time today — I know getting two executives on a call is not easy
+
+[00:00:13] priya.patel: yeah we made it a priority because honestly we're in a bit of a crisis mode right now so [laughs] let's just get into it
+
+[00:00:21] jamie.l: of course yeah um so Priya you mentioned in your email that your GTM motion is broken — can you walk me through what that actually looks like day to day
+
+[00:00:31] priya.patel: okay so um where do I even start. so we're at 1200 employees now, we grew like 300% in 18 months and our infrastructure just did not keep up. we have three CRMs — don't ask [laughs] — like Salesforce is supposed to be the system of record but we also have HubSpot from a company we acquired and then some teams are still using Pipedrive and they're like half-integrated at best
+
+[00:01:02] raj.s: and leads are just falling through the gaps between these systems basically
+
+[00:01:07] priya.patel: exactly, like Raj's team did an analysis last quarter and um -- Raj you want to share that number
+
+[00:01:14] raj.s: yeah so we estimate we lost approximately 2 million dollars in pipeline last quarter just from routing delays and leads that got assigned to the wrong rep or just never got assigned at all. and that's a conservative estimate
+
+[00:01:29] jamie.l: two million. okay. um and how are you routing leads today, like what does that process look like
+
+[00:01:37] priya.patel: so we have this uh Python script that one of our engineers wrote like three years ago. he left the company eight months ago and I promise you nobody on my current team fully understands what it does. we're scared to touch it. it's like... we call it the black box [laughs]
+
+[00:01:55] jamie.l: [laughs] I've heard that one before yeah
+
+[00:01:58] priya.patel: and it just cannot handle our complexity anymore. like we have routing rules for 7 different regions, 4 product lines, 3 customer tiers, and then like special rules for enterprise accounts and partner-sourced leads and it's just... a rule engine cannot handle this. we need something that can actually reason about a lead
+
+[00:02:21] jamie.l: right so you need actual intelligence not just if-then logic
+
+[00:02:25] priya.patel: exactly. and I have a board meeting in six weeks where I am presenting our new GTM architecture and I told them I would have a solution in place. not a proposal, an actual solution. so the timeline is real
+
+[00:02:40] raj.s: and the budget is pre-approved, just to be clear. 200K for this quarter specifically for solving this problem. we're not doing an exploratory evaluation here, we're buying something
+
+[00:02:52] jamie.l: that's very helpful context, thank you. um so let me ask -- what does success look like at that board meeting, like what do you want to be able to show them
+
+[00:03:01] priya.patel: I want to show them a live demo of a lead coming in and being intelligently routed in real time. I want them to see the reasoning, not just the output. like I want to show that the system understood the lead was enterprise, high intent, from a strategic region, and made the right call automatically
+
+[00:03:21] jamie.l: okay that is very achievable with LeanData. um I'd like to bring our solutions engineering team in for a technical deep dive -- would tomorrow or Wednesday work
+
+[00:03:31] priya.patel: tomorrow. let's do tomorrow. and bring your most technical person, I don't want slides I want to see the actual system
+
+[00:03:39] raj.s: and can you send over an architecture doc before the call so we can come prepared with real questions
+
+[00:03:45] jamie.l: absolutely, I'll send that over within the hour
+
+[00:03:48] priya.patel: perfect. okay we'll talk tomorrow
+
+[END OF TRANSCRIPT]
+
+--- GONG AUTO-TAGS ---
+topics_detected: ["multi_crm_complexity", "budget_confirmed", "hard_deadline", "pipeline_loss_quantified", "executive_sponsor", "technical_evaluation"]
+next_steps: ["send architecture doc today", "schedule solutions engineering call tomorrow"]
+risk_flags: ["competitor_evaluation_possible", "complex_integration_requirements"]
+deal_stage_predicted: "technical_evaluation"
+deal_size_predicted: "enterprise"

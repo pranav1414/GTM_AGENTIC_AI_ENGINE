@@ -1,0 +1,92 @@
+{
+  "gmail_thread_id": "17e8f3a2c91d4b05",
+  "history_id": "2291847",
+  "messages": [
+    {
+      "id": "17e8f3a2c91d4b05",
+      "threadId": "17e8f3a2c91d4b05",
+      "labelIds": ["SENT"],
+      "snippet": "Hi Mike reaching out because DataFlow fits our ICP...",
+      "internalDate": "1707548400000",
+      "payload": {
+        "headers": [
+          {"name": "From", "value": "Jamie Reyes <jamie.r@leandata.com>"},
+          {"name": "To", "value": "mike.chen@dataflow.com"},
+          {"name": "Subject", "value": "Quick question about DataFlow's lead ops"},
+          {"name": "Date", "value": "Mon, 10 Feb 2024 09:00:00 -0800"},
+          {"name": "Message-ID", "value": "<CABx9z2k1@mail.gmail.com>"}
+        ],
+        "mimeType": "text/html",
+        "body": {
+          "data": "<div dir=\"ltr\">Hi Mike,<br><br>I came across DataFlow and noticed you&#39;re scaling your data analytics offering pretty quickly — congrats on the growth.<br><br>I work at LeanData and we help companies like yours automate lead routing and scoring so ops teams stop doing it manually. Wondering if this is something on your radar at all?<br><br>Worth a 15 min call?<br><br>Jamie<br><div class=\"gmail_signature\"><div>Jamie Reyes | SDR | LeanData<br>jamie.r@leandata.com | (415) 555-0182</div></div></div>"
+        }
+      }
+    },
+    {
+      "id": "17e8f3a2c91d4b06",
+      "threadId": "17e8f3a2c91d4b05",
+      "labelIds": ["INBOX"],
+      "snippet": "Thanks for reaching out. We handle routing manually right now...",
+      "internalDate": "1707634800000",
+      "payload": {
+        "headers": [
+          {"name": "From", "value": "Mike Chen <mike.chen@dataflow.com>"},
+          {"name": "To", "value": "Jamie Reyes <jamie.r@leandata.com>"},
+          {"name": "Subject", "value": "Re: Quick question about DataFlow's lead ops"},
+          {"name": "Date", "value": "Tue, 11 Feb 2024 09:00:00 -0800"},
+          {"name": "References", "value": "<CABx9z2k1@mail.gmail.com>"}
+        ],
+        "mimeType": "text/html",
+        "body": {
+          "data": "<div dir=\"ltr\">Hi Jamie,<br><br>Thanks for reaching out. Honestly we&#39;re a pretty small team and we handle routing manually right now — it&#39;s not perfect but it works for our volume. Not sure we need something this complex at the moment.<br><br>Mike<br><br></div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Feb 10, 2024 at 9:00 AM Jamie Reyes &lt;jamie.r@leandata.com&gt; wrote:<br></div><blockquote class=\"gmail_blockquote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Hi Mike,<br><br>I came across DataFlow...</div></blockquote></div>"
+        }
+      }
+    },
+    {
+      "id": "17e8f3a2c91d4b07",
+      "threadId": "17e8f3a2c91d4b05",
+      "labelIds": ["SENT"],
+      "snippet": "Totally understand — would a 15 min call hurt?",
+      "internalDate": "1707721200000",
+      "payload": {
+        "headers": [
+          {"name": "From", "value": "Jamie Reyes <jamie.r@leandata.com>"},
+          {"name": "To", "value": "mike.chen@dataflow.com"},
+          {"name": "Subject", "value": "Re: Quick question about DataFlow's lead ops"},
+          {"name": "Date", "value": "Wed, 12 Feb 2024 09:00:00 -0800"}
+        ],
+        "mimeType": "text/html",
+        "body": {
+          "data": "<div dir=\"ltr\">Totally understand Mike — lots of our customers said the same thing before they started scaling. Would a 15-min call hurt? Even just to keep it in your back pocket for later?<br><br>Jamie</div><br><div class=\"gmail_quote\"><blockquote class=\"gmail_blockquote\">On Tue, Feb 11...</blockquote></div>"
+        }
+      }
+    },
+    {
+      "id": "17e8f3a2c91d4b08",
+      "threadId": "17e8f3a2c91d4b05",
+      "labelIds": ["INBOX"],
+      "snippet": "Sure a quick call is fine but no budget this quarter...",
+      "internalDate": "1707807600000",
+      "payload": {
+        "headers": [
+          {"name": "From", "value": "Mike Chen <mike.chen@dataflow.com>"},
+          {"name": "To", "value": "Jamie Reyes <jamie.r@leandata.com>"},
+          {"name": "Subject", "value": "Re: Quick question about DataFlow's lead ops"},
+          {"name": "Date", "value": "Thu, 13 Feb 2024 09:00:00 -0800"}
+        ],
+        "mimeType": "text/html",
+        "body": {
+          "data": "<div dir=\"ltr\">Sure, a quick call is fine. But I want to be upfront — we don&#39;t have budget allocated for new tooling this quarter at all. This would be purely exploratory. I&#39;m an engineer so if there&#39;s something technically interesting I&#39;m happy to learn but the business case isn&#39;t obvious to me yet. Maybe revisit in 6 months if we grow.<br><br>Mike<br><br><div class=\"gmail_signature\">Mike Chen | Senior Data Engineer | DataFlow Ltd<br>mike.chen@dataflow.com</div></div><br><div class=\"gmail_quote\"><blockquote class=\"gmail_blockquote\">On Wed, Feb 12...</blockquote></div>"
+        }
+      }
+    }
+  ],
+  "_crm_enrichment": {
+    "lead_id": 2,
+    "synced_to_salesforce": true,
+    "sf_lead_id": "00Q8Z000009xKpLUAU",
+    "rep_notes": "polite but no urgency, no budget, no exec sponsorship, engineer not a buyer — long nurture only, do NOT assign AE",
+    "next_action": "enroll_in_nurture_sequence",
+    "follow_up_date": "2024-08-01"
+  }
+}

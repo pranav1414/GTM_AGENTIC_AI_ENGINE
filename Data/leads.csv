@@ -1,0 +1,11 @@
+id,name,company,email,industry,employee_count,annual_revenue,country,lead_source,last_activity_days,num_website_visits,num_emails_opened,num_demo_requests,job_title,has_budget,in_buying_stage,created_date
+1,Sarah Johnson,TechCorp Inc,sarah@techcorp.com,SaaS,500,10000000,USA,Inbound,3,12,8,2,VP of Sales,true,true,2024-01-15
+2,Mike Chen,DataFlow Ltd,mike@dataflow.com,Data Analytics,200,4000000,Canada,Outbound,45,2,1,0,Data Engineer,false,false,2024-01-20
+3,Priya Patel,CloudNine,priya@cloudnine.com,Cloud Infrastructure,1200,50000000,USA,Referral,1,20,15,3,CTO,true,true,2024-02-01
+4,James Williams,OldSchool Corp,james@oldschool.com,Manufacturing,5000,200000000,USA,Cold Outreach,120,1,0,0,IT Manager,false,false,2024-01-05
+5,Emma Davis,GrowthHQ,emma@growthhq.com,Marketing Tech,80,1500000,UK,Inbound,7,9,6,1,Head of RevOps,true,true,2024-02-10
+6,Carlos Rodriguez,ScaleUp AI,carlos@scaleupai.com,AI/ML,150,3000000,USA,Inbound,2,18,12,2,CEO,true,true,2024-02-12
+7,Linda Park,EnterpriseCo,linda@enterpriseco.com,Finance,10000,500000000,USA,Outbound,90,3,2,0,CFO,false,false,2024-01-10
+8,Tom Baker,StartupX,tom@startupx.com,Fintech,30,500000,USA,Inbound,14,7,4,1,Founder,true,false,2024-02-08
+9,Aisha Okonkwo,AfricaTech,aisha@africatech.com,Telecom,600,20000000,Nigeria,Referral,5,11,9,2,VP Operations,true,true,2024-02-14
+10,David Kim,MegaRetail,david@megaretail.com,Retail,3000,100000000,USA,Cold Outreach,60,4,1,0,Director of IT,false,false,2024-01-25

@@ -1,0 +1,9 @@
+﻿leadsai/
+__pycache__/
+*.duckdb
+*.duckdb.wal
+Data/chroma/
+.env
+*.pyc
+routing_decisions.json
+routing_decisions_invalid.json

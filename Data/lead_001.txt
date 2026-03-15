@@ -1,0 +1,53 @@
+GONG CALL RECORDING — AUTO TRANSCRIPT
+======================================
+call_id: gng_8821kzx991
+date: 2024-02-18T14:32:07Z
+duration_seconds: 1924
+participants: ["alex.m@leandata.com", "sarah.johnson@techcorp.com"]
+sentiment_score: 0.83
+talk_ratio: {"rep": 0.38, "prospect": 0.62}
+======================================
+
+[00:00:04] alex.m: hey Sarah uh thanks so much for uh jumping on today I know you're super busy so I'll try to keep this moving
+
+[00:00:11] sarah.johnson: yeah totally no worries um so I've got like a hard stop at 3 so let's try to be efficient
+
+[00:00:18] alex.m: absolutely okay so um I just wanted to start by asking like what's going on at TechCorp right now like what's the main thing keeping you up at night
+
+[00:00:27] sarah.johnson: [laughs] honestly so much um okay so we just closed series B like six weeks ago and suddenly everyone's like okay now you need to scale and I'm sitting here with 40 sales reps and our lead routing is still like... we're doing it manually? like someone on my ops team literally looks at a spreadsheet every morning and assigns leads
+
+[00:00:51] alex.m: oh wow okay so like every single lead--
+
+[00:00:53] sarah.johnson: every. single. lead. yes [laughs] and it's fine when it's like 50 leads a day but now we're getting like 200+ and she's just... it's not sustainable at all like we're losing time, we're missing leads over weekends, hot leads go cold because nobody caught them
+
+[00:01:14] alex.m: right right that makes total sense um so like what's the -- is there like a specific moment that made you go okay I need to actually fix this now
+
+[00:01:23] sarah.johnson: yeah so um two weeks ago we had this inbound lead from a Fortune 500 company come in on a Saturday and nobody saw it until Monday and by then they'd already signed with a competitor. that was like... that was the moment. my CEO called me and was like what happened and I had no good answer
+
+[00:01:44] alex.m: ouch yeah that's painful. um so I guess the question is like what does solving this look like for you, like what's the ideal outcome
+
+[00:01:53] sarah.johnson: so I need -- okay here's the thing. I don't want like a rule-based thing where it's like IF company size > 500 THEN route to enterprise team. that's too rigid. I need something that can like... reason? like look at the full picture of a lead and make an intelligent decision. one of my advisors mentioned LeanData does like AI-driven routing and that's why I reached out
+
+[00:02:19] alex.m: yeah that's exactly what we do um so--
+
+[00:02:21] sarah.johnson: [crosstalk] and also I should say like we have a board presentation next month and I kind of told them I'd have a solution in place so there's a timeline here [laughs nervously]
+
+[00:02:31] alex.m: okay so you have a hard deadline essentially
+
+[00:02:34] sarah.johnson: yeah next month. and budget is not the issue, we have like 80K approved for this specifically, so it's more about can you actually deliver in time
+
+[00:02:44] alex.m: yeah absolutely we can do that. um let me pull in our solutions team this week for a technical deep dive--
+
+[00:02:50] sarah.johnson: yes please. and bring like a technical person not just a sales person, I want to see the actual architecture
+
+[00:02:57] alex.m: 100% will do. okay let me send you a calendar invite right after this
+
+[00:03:01] sarah.johnson: perfect. okay I gotta jump but yes let's move fast on this
+
+[END OF TRANSCRIPT]
+
+--- GONG AUTO-TAGS ---
+topics_detected: ["pricing", "competitor_mention", "timeline", "budget_confirmed", "decision_maker"]
+next_steps: ["send calendar invite for technical deep dive"]
+risk_flags: []
+deal_stage_predicted: "evaluation"

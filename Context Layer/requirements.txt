@@ -1,0 +1,6 @@
+# Layer 2 — Context Layer dependencies
+sentence-transformers==2.7.0
+chromadb==0.5.0
+langchain==0.2.0
+langchain-community==0.2.0
+duckdb==0.10.3
