@@ -16,8 +16,6 @@ Drop in a CSV of leads. The engine:
 4. **Routes** each lead through 3 autonomous AI agents that reason, decide, and format
 5. **Dispatches** rep assignments, CRM stage updates, and Slack alerts — all via REST API
 
-**Total cost to run: $0.**
-
 ---
 
 ## 🏗️ Architecture
