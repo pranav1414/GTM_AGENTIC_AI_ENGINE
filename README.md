@@ -24,45 +24,6 @@ Drop in a CSV of leads. The engine:
 
 ![GTM Agentic AI Engine](GTM%20AI%20AGENTIC%20ENGINE.png)
 
-```
-Raw CRM Data (CSV) + Transcripts (.txt / .json)
-        │
-        ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 1 — Data Ingestion                   │
-│  pandas → DuckDB → leads_final              │
-│  raw_leads · raw_transcripts · leads_final  │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 2 — Context Layer                    │
-│  sentence-transformers → ChromaDB           │
-│  34 chunks · 384-dim vectors · cosine sim   │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 3 — Scoring Layer                    │
-│  Groq LLM judge + deterministic rules       │
-│  score 0–100 · tier · reasoning · signals   │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 4 — Agentic Layer                    │
-│  CrewAI · 3 agents · sequential reasoning  │
-│  Analyst → Strategist → Formatter          │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 5 — GTM Automation                   │
-│  Rep assignment · CRM update · Slack alert  │
-│  FastAPI REST — all layers exposed at /docs │
-└─────────────────────────────────────────────┘
-```
-
 ---
 
 ## 🧠 The Agentic Layer (Layer 4)
