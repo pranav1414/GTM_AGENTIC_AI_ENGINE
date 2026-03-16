@@ -59,7 +59,6 @@ GTM_AGENTIC_AI_ENGINE/
 │
 ├── 01_data_layer.py          # Layer 1 entry point
 ├── run_pipeline.py           # Master runner — executes all 5 layers
-├── run_layer4.py             # Layer 4 standalone runner
 │
 ├── Data/
 │   ├── leads.csv             # 10 CRM leads
