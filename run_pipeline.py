@@ -20,6 +20,7 @@ import json
 import importlib.util
 import duckdb
 import traceback
+import time
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
@@ -68,12 +69,10 @@ def run_layer1():
     banner("LAYER 1 — Data Ingestion")
 
     import pandas as pd
-    import glob
     import re
 
     conn = duckdb.connect(str(DB_PATH))
 
-    # ── Load leads.csv ──────────────────────────────────────────────────────
     leads_csv = DATA_DIR / "leads.csv"
     if not leads_csv.exists():
         warn(f"leads.csv not found at {leads_csv} — skipping")
@@ -84,7 +83,6 @@ def run_layer1():
         count = conn.execute("SELECT COUNT(*) FROM raw_leads").fetchone()[0]
         success(f"raw_leads: {count} rows loaded from leads.csv")
 
-    # ── Load transcripts ────────────────────────────────────────────────────
     txt_files  = list(DATA_DIR.glob("*.txt"))
     json_files = list(DATA_DIR.glob("*.json"))
     all_files  = txt_files + json_files
@@ -134,8 +132,6 @@ def run_layer1():
         count = conn.execute("SELECT COUNT(*) FROM raw_transcripts").fetchone()[0]
         success(f"raw_transcripts: {count} rows loaded")
 
-    # ── Run dbt-style transformations inline ────────────────────────────────
-    # (since dbt requires a separate install, we replicate the transforms in SQL)
     try:
         conn.execute("DROP TABLE IF EXISTS leads_final")
         conn.execute("""
@@ -205,7 +201,6 @@ def run_layer2():
 
         docs = []
 
-        # Load .txt transcript files
         for path in DATA_DIR.glob("*.txt"):
             text    = path.read_text(encoding="utf-8").strip()
             lead_id = path.stem
@@ -218,7 +213,6 @@ def run_layer2():
                     "chunk_i": i,
                 })
 
-        # Load lead notes from DuckDB
         try:
             conn = duckdb.connect(str(DB_PATH), read_only=True)
             rows = conn.execute("""
@@ -268,27 +262,21 @@ def run_layer3():
 
     scoring_dir = ROOT / "Scoring Layer"
 
-    # Register modules under 'layer3' namespace
     register_layer("layer3", scoring_dir, ["score_parser", "rules_engine", "duckdb_writer"])
 
-    # Patch duckdb_writer to use absolute DB path
     duckdb_writer = sys.modules["layer3.duckdb_writer"]
     duckdb_writer.DB_PATH = str(DB_PATH)
 
-    # Register scoring modules with correct import aliases
-    # lead_scorer imports from 'score_parser' and 'rules_engine' directly
     load_module("score_parser",  scoring_dir / "score_parser.py")
     load_module("rules_engine",  scoring_dir / "rules_engine.py")
     load_module("duckdb_writer", scoring_dir / "duckdb_writer.py")
     sys.modules["duckdb_writer"].DB_PATH = str(DB_PATH)
 
-    # Register layer2 retriever shim
     _register_layer2_retriever()
 
     load_module("layer3.lead_scorer", scoring_dir / "lead_scorer.py")
     lead_scorer = sys.modules["layer3.lead_scorer"]
 
-    # Load leads from DuckDB
     conn  = duckdb.connect(str(DB_PATH), read_only=True)
     rows  = conn.execute("SELECT * FROM leads_final").fetchdf()
     conn.close()
@@ -314,8 +302,8 @@ def _register_layer2_retriever():
 
         def get_relevant_chunks(self, query: str, lead_id: str = "", k: int = 5) -> list[str]:
             try:
-                where = {"lead_id": lead_id} if lead_id else None
-                q_emb = self.model.encode([query]).tolist()
+                where  = {"lead_id": lead_id} if lead_id else None
+                q_emb  = self.model.encode([query]).tolist()
                 kwargs = dict(query_embeddings=q_emb, n_results=min(k, self.col.count() or 1))
                 if where:
                     kwargs["where"] = where
@@ -339,12 +327,9 @@ def run_layer4():
 
     register_layer("layer4", agentic_dir, ["tools", "output", "agents", "orchestrator"])
 
-    # Patch orchestrator DB path
     orchestrator = sys.modules["layer4.orchestrator"]
     orchestrator.DB_PATH = str(DB_PATH)
 
-    # Check leads_scored table exists (Layer 3 writes lead_scores, Layer 4 reads leads_scored)
-    # We alias lead_scores → leads_scored so Layer 4 can query it
     conn = duckdb.connect(str(DB_PATH))
     try:
         conn.execute("""
@@ -362,11 +347,20 @@ def run_layer4():
     except Exception as e:
         conn.close()
         warn(f"Could not create leads_scored view: {e}")
-        return
+        return []
 
     decisions = orchestrator.run_layer4(min_score=0)
-    success(f"Layer 4 complete — {len(decisions)} routing decisions made")
-    return decisions
+
+    # ── Filter out invalid decisions where LLM returned nulls ──────────────
+    valid_decisions = []
+    for d in (decisions or []):
+        if d.get("priority") and d.get("urgency") and d.get("rep_tier"):
+            valid_decisions.append(d)
+        else:
+            warn(f"Skipping lead {d.get('lead_id')} — LLM returned null fields, excluded from dispatch")
+
+    success(f"Layer 4 complete — {len(valid_decisions)} valid routing decisions made")
+    return valid_decisions
 
 
 # ── Layer 5 ────────────────────────────────────────────────────────────────────
@@ -377,7 +371,6 @@ def run_layer5(decisions: list[dict]):
     gtm_dir = ROOT / "GTM Automation"
     register_layer("layer5", gtm_dir, ["lead_router", "crm_updater", "slack_alert", "dispatcher"])
 
-    # Patch DB paths
     for mod_name in ["layer5.lead_router", "layer5.crm_updater"]:
         mod = sys.modules[mod_name]
         mod.DB_PATH = DB_PATH
@@ -385,24 +378,31 @@ def run_layer5(decisions: list[dict]):
     dispatcher = sys.modules["layer5.dispatcher"]
 
     if not decisions:
-        warn("No decisions from Layer 4 — skipping Layer 5")
+        warn("No valid decisions from Layer 4 — skipping Layer 5")
         return
 
     print(f"  Dispatching {len(decisions)} routing decisions...")
     results = []
     for decision in decisions:
-        # Map Layer 4 fields to Layer 5 dispatcher format
+        # Safely get all fields with fallbacks — never crash on nulls
+        priority = decision.get("priority") or "low"
         payload = {
             "lead_id":     decision.get("lead_id", "unknown"),
             "score":       decision.get("score", 0),
             "action_type": ["assign", "update_crm", "alert"],
-            "priority":    decision.get("priority", "low"),
+            "priority":    priority,
             "reason":      decision.get("reason", ""),
             "company":     decision.get("company_name", ""),
         }
-        result = dispatcher.dispatch(payload)
-        results.append(result)
-        print(f"  → {payload['lead_id']} | {payload['priority'].upper()} | {result.get('results', {}).get('assign', {}).get('rep', '?')}")
+
+        try:
+            result = dispatcher.dispatch(payload)
+            results.append(result)
+            rep = result.get("results", {}).get("assign", {}).get("rep", "?")
+            print(f"  → {payload['lead_id']} | {priority.upper()} | {rep}")
+        except Exception as e:
+            warn(f"Dispatch failed for lead {payload['lead_id']}: {e}")
+            continue
 
     success(f"Layer 5 complete — {len(results)} leads dispatched")
     return results
