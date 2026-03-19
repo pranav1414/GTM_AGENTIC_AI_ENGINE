@@ -16,52 +16,11 @@ Drop in a CSV of leads. The engine:
 4. **Routes** each lead through 3 autonomous AI agents that reason, decide, and format
 5. **Dispatches** rep assignments, CRM stage updates, and Slack alerts — all via REST API
 
-**Total cost to run: $0.**
-
 ---
 
 ## 🏗️ Architecture
 
 ![GTM Agentic AI Engine](GTM%20AI%20AGENTIC%20ENGINE.png)
-
-```
-Raw CRM Data (CSV) + Transcripts (.txt / .json)
-        │
-        ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 1 — Data Ingestion                   │
-│  pandas → DuckDB → leads_final              │
-│  raw_leads · raw_transcripts · leads_final  │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 2 — Context Layer                    │
-│  sentence-transformers → ChromaDB           │
-│  34 chunks · 384-dim vectors · cosine sim   │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 3 — Scoring Layer                    │
-│  Groq LLM judge + deterministic rules       │
-│  score 0–100 · tier · reasoning · signals   │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 4 — Agentic Layer                    │
-│  CrewAI · 3 agents · sequential reasoning  │
-│  Analyst → Strategist → Formatter          │
-└─────────────────┬───────────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────────┐
-│  LAYER 5 — GTM Automation                   │
-│  Rep assignment · CRM update · Slack alert  │
-│  FastAPI REST — all layers exposed at /docs │
-└─────────────────────────────────────────────┘
-```
 
 ---
 
@@ -100,7 +59,6 @@ GTM_AGENTIC_AI_ENGINE/
 │
 ├── 01_data_layer.py          # Layer 1 entry point
 ├── run_pipeline.py           # Master runner — executes all 5 layers
-├── run_layer4.py             # Layer 4 standalone runner
 │
 ├── Data/
 │   ├── leads.csv             # 10 CRM leads
