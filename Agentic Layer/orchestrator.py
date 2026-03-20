@@ -60,25 +60,20 @@ def build_tasks(lead: dict, lead_analyst, decision_agent, formatter) -> list[Tas
     safe_company = sanitize_text(lead.get("company_name", ""))
 
     task1 = Task(
-        description=(
-            f"Analyse the following lead and write a plain-text summary (no quotes, "
-            f"no special characters) of the key signals.\n\n"
-            f"Lead ID: {lead['lead_id']}\n"
-            f"Company: {safe_company}\n"
-            f"Score: {lead['score']}\n"
-            f"Rep notes: {safe_notes}\n\n"
-            f"Use the ChromaDB retriever tool with lead_id='{lead['lead_id']}' "
-            f"to pull transcript context. Then write a 3-5 sentence plain-text summary "
-            f"of what matters about this lead. "
-            f"IMPORTANT: Do not use double quotes or curly braces in your summary."
-        ),
-        expected_output=(
-            "A concise plain-text summary (3-5 sentences) with no double quotes or "
-            "special characters. Cover: score interpretation, notable signals, and "
-            "any red flags or strong positive indicators."
-        ),
-        agent=lead_analyst,
-    )
+    description=(
+        f"You are analysing lead {lead['lead_id']} from {safe_company} with a score of {lead['score']}. "
+        f"Background: {safe_notes}. "
+        f"Use the ChromaDB retriever tool with lead_id='{lead['lead_id']}' to check for transcript context. "
+        f"Then write ONE paragraph of 3-5 sentences summarising what matters about this lead. "
+        f"STRICT RULES: Write only plain sentences. No bullet points. No labels like Score or Rep notes. "
+        f"No colons followed by values. No double quotes. No curly braces. Just plain flowing sentences."
+    ),
+    expected_output=(
+        "One plain paragraph of 3-5 sentences with no labels, no colons, no quotes, "
+        "no special characters. Just flowing plain text sentences."
+    ),
+    agent=lead_analyst,
+)
 
     task2 = Task(
         description=(
