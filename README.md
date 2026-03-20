@@ -170,4 +170,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-<p align="center">Built with zero dollars and a lot of deterministic logic.</p>
+<p align="center">Built with zero dollars and a lot of deterministic and probabilistic logic.</p>
