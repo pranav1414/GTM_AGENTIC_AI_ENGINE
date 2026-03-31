@@ -1,6 +1,5 @@
 # 🚀 GTM Agentic AI Engine
-Autonomous revenue engine that scores, routes, and acts on CRM leads — fully free, fully local, zero external dependencies.
-
+Autonomous revenue engine that scores, routes, and acts on CRM leads. 
 Built on a 5-layer architecture that takes raw CRM data and transcripts, scores every lead using an LLM judge, runs autonomous AI agents to make routing decisions, and dispatches the results to reps via a production-ready REST API.
 
 ---
@@ -25,7 +24,7 @@ GTM Agentic AI Engine
 ---
 
 ## 🧠 The Agentic Layer (Layer 4)
-Three CrewAI agents run sequentially for each lead — each one builds on the previous agent's output:
+Three CrewAI agents run sequentially for each lead, each one builds on the previous agent's output:
 
 | Agent | Role | Tool | Output |
 |---|---|---|---|
@@ -38,7 +37,7 @@ The blend of probabilistic LLM reasoning (Layer 3 scoring + Agent analysis) with
 ---
 
 ## 🛠️ Tech Stack
-Python · DuckDB · ChromaDB · CrewAI · Groq · FastAPI · Pandas · sentence-transformers · $0 cost
+Python · DuckDB · ChromaDB · CrewAI · Groq · FastAPI · Pandas · sentence-transformers
 
 ---
 
