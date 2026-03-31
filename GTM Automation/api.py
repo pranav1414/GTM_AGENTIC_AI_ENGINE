@@ -10,14 +10,17 @@ Swagger UI auto-generated at:
     http://localhost:8000/docs
 """
 
+import hashlib
+import hmac
 import json
 import logging
+import os
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional, Union
+from typing import Any, Optional, Union
 
 import duckdb
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Header, HTTPException, Request
 from pydantic import BaseModel, Field
 
 from .dispatcher import dispatch
@@ -51,6 +54,20 @@ class RoutingDecision(BaseModel):
 
 class ScoreRequest(BaseModel):
     lead_id: str = Field(..., example="lead_0042")
+
+
+class WebhookPayload(BaseModel):
+    event: str              = Field(...,  example="lead.scored")
+    data:  dict[str, Any]   = Field(...,  example={
+        "lead_id": "lead_0042",
+        "score": 91,
+        "action_type": ["assign", "update_crm", "alert"],
+        "rep": "sarah.jones",
+        "priority": "high",
+        "reason": "Champion identified",
+        "company": "Acme Corp",
+        "contact": "John Smith",
+    })
 
 
 # ── Health ─────────────────────────────────────────────────────────────────────
@@ -101,6 +118,72 @@ def alert(decision: RoutingDecision):
     try:
         return send_alert(decision.model_dump())
     except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ── n8n webhook ────────────────────────────────────────────────────────────────
+
+@app.post("/webhook", tags=["layer5"])
+async def n8n_webhook(
+    payload: WebhookPayload,
+    request: Request,
+    x_n8n_signature: Optional[str] = Header(None, alias="X-N8N-Signature"),
+):
+    """
+    n8n-compatible webhook endpoint.
+
+    Expects a JSON body of the form:
+        { "event": "<event_name>", "data": { ...RoutingDecision fields... } }
+
+    HMAC verification:
+        If the WEBHOOK_SECRET environment variable is set, the request MUST
+        include an X-N8N-Signature header of the form:
+            sha256=<hex_digest>
+        computed as HMAC-SHA256(secret, raw_request_body).
+        Requests that fail verification are rejected with HTTP 401.
+    """
+    # ── HMAC signature verification ────────────────────────────────────────────
+    secret = os.getenv("WEBHOOK_SECRET")
+    if secret:
+        if not x_n8n_signature:
+            raise HTTPException(
+                status_code=401,
+                detail="Missing X-N8N-Signature header.",
+            )
+
+        raw_body = await request.body()
+        expected_digest = hmac.new(
+            secret.encode(),
+            raw_body,
+            hashlib.sha256,
+        ).hexdigest()
+        expected_header = f"sha256={expected_digest}"
+
+        if not hmac.compare_digest(expected_header, x_n8n_signature):
+            raise HTTPException(
+                status_code=401,
+                detail="Invalid X-N8N-Signature — HMAC verification failed.",
+            )
+
+    # ── Map payload.data onto RoutingDecision ──────────────────────────────────
+    try:
+        decision = RoutingDecision(**payload.data)
+    except Exception as e:
+        raise HTTPException(
+            status_code=422,
+            detail=f"payload.data could not be mapped to a RoutingDecision: {e}",
+        )
+
+    # ── Dispatch (identical to POST /dispatch) ─────────────────────────────────
+    try:
+        result = dispatch(decision.model_dump())
+        return {
+            "event":    payload.event,
+            "lead_id":  decision.lead_id,
+            "dispatch": result,
+        }
+    except Exception as e:
+        logger.error(f"[api] webhook dispatch failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
