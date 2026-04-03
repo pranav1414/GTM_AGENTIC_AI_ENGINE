@@ -1,0 +1,66 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    3
+Contact:    Ashley Cruz
+Title:      Head of Data
+Company:    Phillips, Williams and Steele
+Industry:   HealthTech
+Employees:  1145
+Revenue:    $71,662,963
+Source:     Webinar
+Has Budget: True
+====================
+
+Alex: Hi Ashley, this is Alex from InsightMetrics. How are you doing today?
+
+Ashley Cruz: Hi Alex, I'm doing well, thanks. Busy as usual here at Phillips, Williams and Steele. How about yourself?
+
+Alex: I hear you on the busy front! Doing great over here, thanks. I really appreciate you making the time to chat today. I know it's been a little while, about 78 days since your last activity with us, specifically when you requested a second demo after attending our "Data Lake to Actionable Insights" webinar. My apologies for the delay in reaching out sooner – we've had a surge of interest after that particular session.
+
+Ashley Cruz: No worries at all, Alex. It's tough to keep up sometimes. Yes, that webinar really piqued my interest, and I'm still keen to understand more. We've been evaluating a few different solutions in this space.
+
+Alex: Excellent, that's really good to hear. And again, thank you for coming back for a second look. My goal for our chat today, Ashley, is really just to understand a bit more about what resonated with you from that webinar, what specific challenges you're facing as Head of Data at Phillips, Williams and Steele, and ultimately, to see if there's a potential fit for how we might be able to help. Does that sound like a good use of our next 10 minutes or so?
+
+Ashley Cruz: Yes, that sounds perfect, Alex.
+
+Alex: Great. So, to kick things off, could you tell me a bit about your current priorities as Head of Data? What's keeping you and your team busy these days, especially given Phillips, Williams and Steele's focus in HealthTech?
+
+Ashley Cruz: Well, as you can imagine, data is at the heart of everything we do. We're a 1100-plus employee company, quite complex. My team is responsible for managing a vast amount of patient data, clinical trial results, operational data from our clinics, and even some emerging real-world evidence. The biggest challenge, frankly, is trying to pull all of that together into a cohesive, actionable view. We've got data siloed in various EHR systems, legacy research databases, and even some newer cloud-based applications.
+
+Alex: That's a common story we hear, Ashley, especially in HealthTech. It sounds like data integration and consolidation is a significant hurdle. When you say "cohesive, actionable view," what's currently preventing you from achieving that, and what's the impact of not having it?
+
+Ashley Cruz: The impact is huge. For one, our research teams are spending an inordinate amount of time just wrangling data instead of analyzing it. They're manually stitching together datasets for clinical trial analysis, which introduces errors and significantly slows down our time to insight. We're talking weeks, sometimes months, just to get a reliable dataset prepared for a new study or for a regulatory submission.
+
+Alex: Weeks or months just for data preparation... that's a serious bottleneck. Are there specific types of data or data sources that are particularly challenging to integrate or clean? For example, are you finding issues with structured versus unstructured data, or perhaps data from external partners?
+
+Ashley Cruz: All of the above, honestly. EHR data from different hospital systems comes in varying formats. We also deal with a lot of genomic data, which is massive and complex, and then there's the unstructured clinical notes data. On top of that, we're collaborating with external research institutions, and getting their data harmonized with ours is a constant struggle. Our current ETL processes are largely manual and brittle, requiring heavy IT intervention every time a new data source comes online or a schema changes.
+
+Alex: Manual ETL, heavy IT dependency, and delays impacting research and potentially regulatory submissions. That paints a very clear picture of the challenges. What about the ultimate goal for this data? What kind of insights are you hoping to generate more quickly, and for whom?
+
+Ashley Cruz: Ultimately, it's about improving patient outcomes and accelerating drug discovery. If we could integrate our data faster, we could identify patient cohorts for trials more efficiently, predict disease progression with greater accuracy, and even personalize treatments. Right now, that's just a pipe dream because we're always playing catch-up with the data. Our clinicians and researchers are hungry for real-time insights, but our data infrastructure can't deliver it. They're making decisions based on stale or incomplete information far too often.
+
+Alex: "Stale or incomplete information" is a critical point, especially when it directly impacts clinical decisions. It sounds like the value proposition of faster, more reliable data delivery is extremely high for Phillips, Williams and Steele. Shifting gears slightly, Ashley, I recall from our initial lead notes that there's already some budget confirmed for a solution in this area. Is that still accurate, and if so, how does that translate into a timeline for addressing these challenges?
+
+Ashley Cruz: Yes, that's correct, Alex. We do have budget allocated. Our CEO and board recognize that our current data infrastructure is holding us back. We're not in a formal buying cycle yet, but we are actively exploring options. We want to find a partner who can truly understand the complexities of HealthTech data and help us build a scalable foundation. Honestly, we're aiming to have a solution implemented and showing value within the next 12-18 months. We can't afford to wait much longer.
+
+Alex: That 12-18 month timeframe aligns with how other HealthTech companies are prioritizing this. It's clear this isn't just a 'nice to have' but a strategic imperative for Phillips, Williams and Steele. You mentioned "finding a partner who can truly understand the complexities." Have you encountered any solutions so far that didn't quite hit the mark in that regard?
+
+Ashley Cruz: Absolutely. We've looked at a few generic data platforms, but they often lack the specialized compliance features for HIPAA or the ability to easily integrate with our specific EHR systems, like EPIC, which is foundational for us. Or, they have a steep learning curve and would require a massive internal reskilling effort, which is time we just don't have. We need something that's powerful but also practical for our team to adopt.
+
+Alex: That's a very valid concern, Ashley, especially the integration with systems like EPIC and the need for specialized compliance. Those are often major sticking points. What I'm hearing is that the ability to quickly integrate diverse HealthTech data, provide actionable insights, and do so within a compliant and user-friendly framework is paramount. Does that sum it up accurately?
+
+Ashley Cruz: Yes, that's spot on, Alex.
+
+Alex: Fantastic. Ashley, based on everything you've shared today – the challenges with data silos, the manual ETL processes, the impact on research and clinical decisions, and your specific needs around compliance and integration with systems like EPIC – I believe our platform, given what you saw in the webinar, could be a very strong fit. What I'd love to propose as a next step is to schedule a more tailored session. We could run through a live demonstration specifically focusing on how we address those integration challenges with HealthTech data sources, show you how we streamline data preparation, and then how we help generate those actionable insights for your researchers and clinicians, all while adhering to industry compliance standards. I could even bring in one of our technical architects who specializes in HealthTech integrations to answer any deeper questions you might have. Would you be open to a session like that, perhaps early next week?
+
+Ashley Cruz: That sounds really valuable, Alex. Especially having a technical architect on the call would be beneficial. Let me check my calendar for next week. How about Tuesday morning, say 10 AM Pacific?
+
+Alex: Tuesday at 10 AM Pacific works perfectly for me. I'll send over a calendar invite right after this call with a brief agenda, outlining what we'll cover to address your specific points. I'll also include a little more information on our HealthTech integration capabilities beforehand. How does that sound?
+
+Ashley Cruz: That sounds great, Alex. Looking forward to it.
+
+Alex: Excellent. Thanks again for your time today, Ashley. I appreciate the candid conversation, and I'm really looking forward to our next chat.
+
+Ashley Cruz: You too, Alex. Have a good one.
+
+Alex: You too. Bye for now.

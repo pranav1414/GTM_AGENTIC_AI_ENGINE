@@ -1,0 +1,58 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    11
+Contact:    Casey Parker
+Title:      Senior Manager
+Company:    Thomas-Mueller
+Industry:   SaaS
+Employees:  4393
+Revenue:    $19,289,546
+Source:     Webinar
+Has Budget: False
+====================
+
+**Alex:** Hi Casey, thanks so much for taking the time to connect today. My name is Alex, I'm with [Your Company Name]. How are things over at Thomas-Mueller? I hear you guys have been making some big waves in the [specific SaaS niche, e.g., FinTech SaaS] space lately.
+
+**Casey Parker:** Hey Alex, thanks for the call. Things are busy, which is usually a good problem to have, right? Yeah, we've had a strong couple of quarters. What can I do for you today?
+
+**Alex:** Absolutely. Well, I noticed you attended our webinar a couple of weeks ago on "Scaling Customer Onboarding for Hyper-Growth," and then we also saw a few demo requests come through from you, which really piqued our interest. Given Thomas-Mueller's impressive growth trajectory, I was hoping to chat for just 10-15 minutes to understand what initially drew you to that topic and what challenges you might be exploring solutions for. Does that sound okay?
+
+**Casey Parker:** Yeah, that sounds fine. The webinar was actually pretty insightful. We're definitely at a point where our current processes are starting to creak a bit, especially on the customer success side.
+
+**Alex:** "Starting to creak" is a phrase I hear often! Could you elaborate a little on that, Casey? What are some of the specific pain points you're experiencing with your existing onboarding or post-sales operations as you continue to scale?
+
+**Casey Parker:** Sure. Our CSMs are just swamped. We've brought on a lot of new customers, which is fantastic, but we haven't quite scaled our post-sales infrastructure to match. A lot of our onboarding is still quite manual – too many spreadsheets, back-and-forth emails, and it’s getting harder to track exactly where each customer is in their journey. This leads to inconsistent experiences, and frankly, I'm worried about our time-to-value metrics slipping. We also just lost a customer whose implementation dragged on too long, which highlighted the issue.
+
+**Alex:** Inconsistent experiences and slipping time-to-value… that's a significant concern, especially in SaaS where churn is always a threat. When you say "harder to track," what kind of impact is that having on your team's ability to foresee issues or proactively engage with customers who might be at risk?
+
+**Casey Parker:** Well, it means our CSMs are spending more time on administrative tasks than actually building relationships or driving adoption. They're jumping between Salesforce, project management tools, and their inboxes just to get a full picture. We often don't realize a customer is struggling until they've already expressed frustration, or worse, until renewal conversations start. It's reactive instead of proactive, and it's impacting team morale and, I suspect, our retention numbers, though we haven't fully quantified it yet.
+
+**Alex:** That makes perfect sense. It sounds like a lot of valuable CSM time is being eaten up by manual coordination and reactive firefighting, which definitely isn't ideal for a growth-stage SaaS company like Thomas-Mueller. You mentioned the multiple demo requests – were there specific features or capabilities you were hoping to see that would address these manual processes or improve visibility?
+
+**Casey Parker:** Primarily, it's about automation and better tracking. We need something that can streamline the handoff from sales, automate some of the standard onboarding tasks, and give us a single pane of glass view of customer progress. Ideally, it would also help us identify at-risk accounts earlier. We've explored a couple of solutions internally, but haven't landed on anything concrete yet.
+
+**Alex:** Got it. Automation, a unified view, and early risk identification – those are definitely areas where we excel. So, given these challenges and the fact that you're actively exploring solutions, where does this initiative sit in terms of priority for Thomas-Mueller right now? Are there specific deadlines or milestones you're working towards?
+
+**Casey Parker:** It's pretty high priority. My VP of Customer Success is keen on getting a plan in place for Q4. We're putting together our budget for next year right now, so if we're going to make a significant investment, now is the time to gather information. I don't have a firm budget number yet, as we're still assessing options, but we know we need to solve this.
+
+**Alex:** That's really helpful context, Casey. Understanding the Q4 timeframe and the budget planning cycle is key. When you think about evaluating a new solution, besides yourself, who else typically gets involved in the decision-making process for something that impacts customer success operations this broadly? Is it just your VP, or does IT, or even finance, get involved early on?
+
+**Casey Parker:** My VP, Mark Chen, will definitely be a key stakeholder. And yes, our Head of Operations, Sarah Lee, will also need to be involved, especially given the integration needs with Salesforce and our other internal systems. Finance will get involved once we have a shortlist and a proposal, but I'm trying to do the heavy lifting upfront to present a solid business case.
+
+**Alex:** Excellent. It sounds like you've got a clear understanding of the internal process. Just to be clear, what are some of your biggest concerns or potential roadblocks you foresee in implementing a new solution like this?
+
+**Casey Parker:** Implementation complexity is a big one. We're already stretched thin, and a lengthy, complicated rollout would be a tough sell. Also, ensuring adoption by our CSMs – they're busy, and if it's not intuitive, it'll just become another tool that collects dust. And obviously, cost has to align with the value we expect to get.
+
+**Alex:** Those are very valid concerns, Casey, and ones we hear frequently. Our implementation process is designed to be as streamlined as possible, and user adoption is something we actively support with training and onboarding for your team.
+
+Based on everything you've shared – the manual processes, the inconsistent customer experiences, the desire for better tracking and automation, and your Q4 timeline for budget planning – I'm confident our platform could be a strong fit for Thomas-Mueller. What I'd suggest as a next step is to schedule a dedicated demo. This would allow us to show you exactly how our solution addresses those specific pain points you highlighted and even dive into some of the integration capabilities. We could also block out a bit of extra time to bring in Mark and Sarah so they can see it firsthand and ask their questions. How does your calendar look early next week? Perhaps Tuesday or Wednesday afternoon?
+
+**Casey Parker:** I think a demo would be good. I'd definitely want Mark and Sarah to be on that call. Let me check my calendar for next week and also coordinate with them. Can you send over a couple of time slots for Tuesday or Wednesday, maybe a meeting invite, and I'll see what works?
+
+**Alex:** Absolutely, I'll send over a few options for next Tuesday and Wednesday, aiming for around an hour and fifteen minutes to ensure we have enough time for the demo and a good Q&A with everyone. In the meantime, I can also send you a brief overview of our integration capabilities with Salesforce, as you mentioned that being a key factor. Does that sound good?
+
+**Casey Parker:** That sounds perfect, Alex. Thanks.
+
+**Alex:** My pleasure, Casey. I'll get that over to you right away. Looking forward to connecting again with you, Mark, and Sarah next week. Have a great rest of your day!
+
+**Casey Parker:** You too. Bye.

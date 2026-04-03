@@ -1,11 +1,101 @@
-id,name,company,email,industry,employee_count,annual_revenue,country,lead_source,last_activity_days,num_website_visits,num_emails_opened,num_demo_requests,job_title,has_budget,in_buying_stage,created_date
-1,Sarah Johnson,TechCorp Inc,sarah@techcorp.com,SaaS,500,10000000,USA,Inbound,3,12,8,2,VP of Sales,true,true,2024-01-15
-2,Mike Chen,DataFlow Ltd,mike@dataflow.com,Data Analytics,200,4000000,Canada,Outbound,45,2,1,0,Data Engineer,false,false,2024-01-20
-3,Priya Patel,CloudNine,priya@cloudnine.com,Cloud Infrastructure,1200,50000000,USA,Referral,1,20,15,3,CTO,true,true,2024-02-01
-4,James Williams,OldSchool Corp,james@oldschool.com,Manufacturing,5000,200000000,USA,Cold Outreach,120,1,0,0,IT Manager,false,false,2024-01-05
-5,Emma Davis,GrowthHQ,emma@growthhq.com,Marketing Tech,80,1500000,UK,Inbound,7,9,6,1,Head of RevOps,true,true,2024-02-10
-6,Carlos Rodriguez,ScaleUp AI,carlos@scaleupai.com,AI/ML,150,3000000,USA,Inbound,2,18,12,2,CEO,true,true,2024-02-12
-7,Linda Park,EnterpriseCo,linda@enterpriseco.com,Finance,10000,500000000,USA,Outbound,90,3,2,0,CFO,false,false,2024-01-10
-8,Tom Baker,StartupX,tom@startupx.com,Fintech,30,500000,USA,Inbound,14,7,4,1,Founder,true,false,2024-02-08
-9,Aisha Okonkwo,AfricaTech,aisha@africatech.com,Telecom,600,20000000,Nigeria,Referral,5,11,9,2,VP Operations,true,true,2024-02-14
-10,David Kim,MegaRetail,david@megaretail.com,Retail,3000,100000000,USA,Cold Outreach,60,4,1,0,Director of IT,false,false,2024-01-25
+id,name,company,email,industry,job_title,lead_source,deal_stage,last_activity_days,has_budget,in_buying_stage,num_website_visits,num_emails_opened,num_demo_requests,annual_revenue,employee_count,country,created_date
+1,Jennifer Oneill,Allen-White,kathleenharris@martin.com,SaaS,CEO,LinkedIn,Qualification,12,True,True,23,1,4,719176,2405,Germany,2026-03-01
+2,Joseph Young,Reed Group,matthewrowland@brown.info,AI/ML,Director of Product,Event,Closed Won,58,False,False,17,6,1,717889,266,UK,2025-12-06
+3,Ashley Cruz,"Phillips, Williams and Steele",brettlopez@gill.com,HealthTech,Head of Data,Webinar,Prospecting,78,True,False,3,5,2,71662963,1145,Canada,2025-08-12
+4,Stephen Davis,Baker-Smith,rebeccajackson@downs.com,MarTech,Senior Manager,Webinar,Negotiation,99,True,False,2,0,1,403445,4214,Singapore,2025-08-19
+5,James Turner,"Roberts, Nelson and Aguirre",johnsonmatthew@ryan-weaver.org,Cybersecurity,VP of Sales,Webinar,Demo Scheduled,78,True,False,8,11,0,81691040,133,Canada,2026-01-09
+6,Gary Price,Lee-Reeves,patrick63@smith-hodges.net,HRTech,VP of Marketing,Webinar,Closed Lost,52,True,True,1,12,2,38317637,158,India,2025-07-05
+7,Mark Austin,"Brown, Juarez and Carlson",nestrada@harrison-fowler.com,E-commerce,VP of Sales,LinkedIn,Qualification,96,True,False,17,8,2,8187926,1633,Australia,2026-03-10
+8,Ryan Kane,Escobar-Davis,ayalabenjamin@clark.info,SaaS,Head of Data,Cold Outreach,Closed Lost,77,True,True,20,2,3,61220073,2559,Singapore,2025-10-14
+9,Ricardo Kane,Mcguire-Diaz,mcalderon@smith.com,AI/ML,COO,Referral,Closed Won,15,False,False,24,10,2,8294150,2657,Singapore,2025-10-23
+10,Robert Schwartz,Gomez-Vasquez,rodriguezvicki@austin-espinoza.net,FinTech,Director of Product,Referral,Closed Lost,26,False,False,20,8,4,31682744,50,USA,2025-07-08
+11,Casey Parker,Thomas-Mueller,sara45@johnson-bass.info,SaaS,Senior Manager,Webinar,Closed Lost,11,False,True,1,3,4,19289546,4393,UK,2025-12-01
+12,Danny Thompson,Odonnell-Fuller,craigkaufman@davis.com,EdTech,Director of Product,Content Download,Qualification,52,False,False,22,3,2,68800797,33,USA,2025-11-11
+13,Michael Blair,Clark Inc,cooperbradley@jenkins.org,Cybersecurity,CEO,Partner Referral,Qualification,30,False,True,0,1,0,170674,2781,Australia,2026-02-25
+14,Morgan Gonzalez,"Hunt, Taylor and Alvarado",rowlandshirley@freeman.com,HealthTech,Director of Product,Inbound,Closed Won,104,False,False,15,3,3,526833,270,Australia,2025-07-15
+15,Yvonne Hebert,"Russell, Green and Johnson",granttamara@cooper-garcia.org,E-commerce,Director of Sales,Cold Outreach,Closed Won,94,False,False,3,0,3,455784,17,Australia,2025-06-28
+16,Kelly Oconnor,Wolfe-Rose,shannonkeller@moore-hamilton.net,FinTech,Director of Operations,Demo Request,Qualification,7,True,False,25,8,0,783823,258,UK,2025-05-10
+17,Kimberly Henderson,Ferguson-Moyer,benjaminnicholas@mcdaniel.com,Data Analytics,Senior Manager,Cold Outreach,Qualification,37,False,True,12,4,3,543555,979,India,2025-08-15
+18,Deborah Williams,Conway-Riley,ulam@adams.net,HRTech,CEO,Webinar,Prospecting,21,True,False,15,8,4,159642,1056,Singapore,2025-06-24
+19,William Smith,Browning-Mcdaniel,shannon55@phillips.org,HealthTech,Chief Revenue Officer,Referral,Negotiation,11,True,False,19,0,4,9770838,18,Canada,2025-09-15
+20,Nicholas Bonilla,Powell-Marshall,kimcrawford@brown.com,Data Analytics,VP of Sales,LinkedIn,Proposal Sent,73,False,True,0,7,4,204837,185,USA,2026-01-04
+21,Brandy Sandoval,"Patton, Green and Jackson",ronald91@mitchell.biz,HealthTech,Head of Growth,LinkedIn,Qualification,104,False,False,22,4,4,11049999,40,Canada,2025-07-07
+22,Jodi Myers,"Simon, Patton and Castillo",mjordan@donovan.com,SaaS,Senior Manager,Referral,Closed Won,27,False,True,8,4,4,37326368,2662,Australia,2025-07-27
+23,April Erickson,"Campbell, Gordon and Walters",mariamack@brown.org,EdTech,Senior Manager,Cold Outreach,Prospecting,43,False,False,8,0,0,3194789,4119,India,2025-12-23
+24,Christina Cross,"Smith, Stewart and Schmidt",joseph45@morgan.org,Data Analytics,Director of Product,Cold Outreach,Prospecting,107,True,False,4,8,0,487151,7,Canada,2026-01-13
+25,Eric Maxwell,Davidson and Sons,seancantu@kramer.com,HealthTech,COO,Event,Closed Won,80,True,False,24,8,3,885884,16,India,2026-01-17
+26,Rebecca Little,"Beck, Lucas and Gates",garciapenny@green-rivera.org,Cybersecurity,Head of Data,Content Download,Closed Lost,21,False,False,25,3,2,925622,163,Canada,2025-09-06
+27,David Stokes,Kennedy PLC,sweeneystephanie@williams.com,EdTech,Director of Sales,Event,Qualification,36,True,False,6,6,2,57130035,254,USA,2025-04-20
+28,Jennifer Johnson,Oneal Ltd,samanthawilliams@sellers.com,SaaS,Senior Manager,LinkedIn,Qualification,56,False,False,1,1,4,68571795,3655,UK,2025-11-11
+29,Jillian Grant,Brooks and Sons,guerraamber@burnett-joyce.info,EdTech,CEO,Content Download,Prospecting,47,False,False,21,11,1,2173965,1520,Canada,2026-01-22
+30,Tina Anderson,Williamson Group,christina43@cook-schmidt.net,HRTech,Director of Operations,Content Download,Demo Scheduled,25,False,False,9,8,1,33357554,3826,Singapore,2025-07-26
+31,Kayla Bryan,"Porter, Roman and Chapman",grahamjustin@mckenzie-chapman.com,AI/ML,Director of Operations,LinkedIn,Qualification,60,False,False,19,10,2,38682516,1890,USA,2025-09-13
+32,Nathan Zavala,"Johnson, Collins and Stewart",rlopez@hogan.com,EdTech,Director of Product,Webinar,Prospecting,19,True,False,9,3,1,1775337,485,Australia,2025-11-04
+33,Ryan Powell,Carroll-Brown,tracey33@daniels.com,MarTech,VP of Marketing,Content Download,Proposal Sent,115,False,True,4,10,0,887443,461,USA,2025-09-03
+34,Mark Bennett,Taylor Group,jenniferwatson@figueroa-jackson.com,HRTech,VP of Marketing,Referral,Proposal Sent,77,True,False,21,8,4,92228802,268,UK,2026-01-14
+35,Vicki Bryan,Lewis-Hernandez,gregorynelson@reeves.biz,E-commerce,VP of Engineering,LinkedIn,Closed Lost,63,True,False,8,12,4,5013879,9,Canada,2025-09-06
+36,Seth Morris,Burke-Ruiz,hquinn@terrell.org,Cybersecurity,Head of Growth,Partner Referral,Prospecting,91,True,True,7,6,1,2077581,327,USA,2025-08-18
+37,Nicole Williams,Mills-Hartman,martinpeterson@velasquez.org,HealthTech,Director of Sales,Content Download,Proposal Sent,49,False,False,0,12,4,1098919,3932,India,2025-05-26
+38,Natalie Gray,"Thompson, Diaz and Cook",charleshuffman@vega-savage.info,HRTech,Head of Data,Event,Proposal Sent,50,True,False,13,7,0,7783308,13,Australia,2026-03-29
+39,Danielle Christian,Patton-Mendoza,garyhall@fitzpatrick.org,MarTech,VP of Customer Success,Cold Outreach,Prospecting,7,False,False,4,7,1,372793,217,Canada,2025-07-18
+40,Jerry Parsons,"Rice, Barton and Miller",alexander47@myers.com,Data Analytics,Director of Operations,Referral,Proposal Sent,29,True,False,17,0,2,781725,6,Germany,2025-08-19
+41,Matthew Brown,"Fields, Kramer and Jordan",joshua37@mooney-james.biz,FinTech,VP of Marketing,Inbound,Proposal Sent,90,False,True,18,3,3,32520277,43,Canada,2026-01-26
+42,Jennifer Brock,Young and Sons,lisaturner@holmes.com,SaaS,VP of Customer Success,Cold Outreach,Demo Scheduled,10,False,False,12,6,1,23676961,1491,Singapore,2025-12-12
+43,Lindsay Moore,"Olsen, Watson and Hester",zhunter@keller.info,AI/ML,Head of Growth,Partner Referral,Proposal Sent,2,False,False,2,8,2,990844,4266,UK,2025-10-17
+44,Lauren Barnes,Parker-Miller,ballardoscar@nguyen-waters.com,Data Analytics,VP of Sales,Partner Referral,Closed Won,60,False,False,25,8,3,556732,10,Singapore,2025-10-17
+45,William Ortiz,Yu LLC,davisdaniel@hart.info,E-commerce,VP of Customer Success,Content Download,Demo Scheduled,28,True,False,10,2,3,5334434,2763,USA,2025-10-14
+46,Nicholas Rojas,Obrien PLC,goldenstephanie@foley.com,HRTech,VP of Marketing,Referral,Qualification,89,False,False,15,8,1,599219,200,India,2025-10-23
+47,Gina Carter,Carson-Olson,roberta65@hill-blackwell.com,HealthTech,Director of Operations,Webinar,Proposal Sent,43,False,False,11,6,4,8612582,1488,UK,2025-07-18
+48,Lori Ford,"Wells, Freeman and Mcneil",karenmorse@sanchez-walker.com,Cybersecurity,CTO,Partner Referral,Closed Lost,36,False,True,6,3,3,9801946,476,UK,2025-12-05
+49,Janet Thompson,Herrera Inc,stephen52@johnson-hernandez.com,Cybersecurity,VP of Sales,LinkedIn,Prospecting,7,False,False,4,4,0,26948946,600,Canada,2025-08-06
+50,Randy Valdez,Lee Inc,carlosreynolds@roy-smith.com,E-commerce,VP of Engineering,Demo Request,Demo Scheduled,106,True,True,8,7,0,168517,41,UK,2026-02-21
+51,Kristen Wiggins,"Hopkins, Walker and Brown",wbailey@frank.org,MarTech,Director of Operations,Referral,Qualification,77,True,False,24,6,4,4786401,2935,Australia,2026-02-10
+52,Michael Stewart,Rubio-Snyder,tanyawerner@arnold-jennings.net,EdTech,VP of Customer Success,Cold Outreach,Negotiation,34,False,True,24,3,1,792509,16,USA,2025-12-18
+53,Dr. Jennifer Rogers MD,Kane-Mccormick,grahamvictor@collins-hamilton.com,Data Analytics,VP of Engineering,Demo Request,Demo Scheduled,90,True,True,9,11,2,2194198,351,USA,2025-11-19
+54,Emily Smith,Davis-Ward,barneskyle@walls.com,HRTech,VP of Marketing,Inbound,Demo Scheduled,77,True,True,1,2,2,885339,2991,Australia,2025-11-25
+55,Bryan Huang,Cruz LLC,erogers@gallagher.org,EdTech,Director of Product,Partner Referral,Proposal Sent,95,False,True,19,0,3,437978,669,Singapore,2026-02-24
+56,Jennifer Rowe,Velez-Preston,sabrina15@waters.biz,EdTech,VP of Customer Success,Cold Outreach,Closed Lost,118,True,False,16,10,3,4044882,45,Australia,2026-01-23
+57,Adam Fox DVM,Garcia Group,ramirezmichael@thomas.com,Cybersecurity,Chief Revenue Officer,Webinar,Demo Scheduled,89,False,True,5,5,3,5835492,40,Canada,2025-04-05
+58,Kristi Sandoval,Li-Gonzalez,csmith@adams.com,EdTech,Head of Growth,Referral,Closed Lost,60,False,False,0,10,4,35176902,4583,Australia,2025-06-19
+59,Ronald Wang,Thomas-Cruz,rmalone@burns.com,AI/ML,VP of Marketing,LinkedIn,Negotiation,16,True,False,14,11,3,5014745,40,UK,2026-01-20
+60,Steven Green,Poole-Garcia,smithangela@larson.com,SaaS,VP of Engineering,Referral,Closed Won,91,True,False,22,4,4,7970771,283,UK,2025-10-03
+61,Scott Wallace,Thompson-White,dyang@robinson.biz,MarTech,Director of Product,Inbound,Closed Lost,44,True,False,24,12,3,925981,2945,Germany,2025-08-31
+62,Nathan Campbell,"Reyes, House and Cole",ronaldmitchell@raymond-miller.biz,E-commerce,Director of Sales,Inbound,Proposal Sent,98,False,False,11,5,4,7328534,2456,Australia,2026-02-19
+63,Theresa Kelly,Bruce LLC,james31@castillo.com,HealthTech,Director of Sales,Content Download,Prospecting,50,False,False,15,11,3,795928,13,Singapore,2025-04-23
+64,Christopher Espinoza,Schneider-Contreras,diazadam@smith-kelly.net,E-commerce,CTO,Partner Referral,Proposal Sent,10,True,False,4,6,1,55440919,253,Singapore,2026-01-11
+65,Daniel Benjamin,Cooper-Williams,mgeorge@smith.com,HRTech,Chief Revenue Officer,Webinar,Closed Won,9,False,False,17,0,4,40532691,1306,India,2025-09-17
+66,Christian Park,Butler Inc,hbeck@jenkins.com,SaaS,VP of Engineering,Inbound,Closed Won,38,False,True,1,5,0,475876,3875,India,2026-01-15
+67,Brittney Miller,Mitchell-Robinson,sandra69@horton.com,FinTech,VP of Sales,Inbound,Prospecting,64,False,False,19,10,1,3401116,180,India,2026-03-11
+68,Meghan Weiss,James LLC,uhill@kim.biz,AI/ML,Senior Manager,Demo Request,Demo Scheduled,45,False,False,5,1,3,6018975,178,UK,2026-03-09
+69,Nicole Knapp,Shields Ltd,edwardroach@walls.com,Data Analytics,Director of Sales,Demo Request,Prospecting,38,True,False,18,5,4,12944682,566,Singapore,2025-08-14
+70,Michael Walker,Avery-Black,asmith@patterson.net,AI/ML,Senior Manager,Demo Request,Closed Lost,29,False,True,19,12,2,4189885,1620,USA,2025-07-23
+71,Austin Williams,Bryant and Sons,cynthiadavis@graham.com,AI/ML,Director of Operations,Demo Request,Prospecting,117,False,False,23,2,0,409445,117,Germany,2025-04-09
+72,Elizabeth Melendez,Thompson-Reese,gwilcox@strong.biz,HRTech,Senior Manager,LinkedIn,Closed Lost,96,True,False,15,12,2,455168,2348,India,2025-08-02
+73,Katherine Harper,"Ramos, Scott and Smith",wagnersara@hatfield.com,Data Analytics,Director of Sales,Partner Referral,Demo Scheduled,16,True,False,0,4,4,45186708,29,India,2025-11-19
+74,Jim Rodriguez,Williams-Gibbs,jacob10@bailey.net,HealthTech,VP of Engineering,Cold Outreach,Negotiation,82,False,False,19,3,0,50559278,31,USA,2026-03-11
+75,Eric Wood,Edwards Ltd,ryanmartinez@wade-hall.com,EdTech,VP of Engineering,Referral,Prospecting,48,True,False,4,6,3,88831486,262,Germany,2025-11-25
+76,Robert Clark,Murphy Inc,kellypaula@duncan.biz,Data Analytics,Director of Operations,Cold Outreach,Closed Won,110,False,True,14,7,1,59302863,233,Canada,2026-02-04
+77,Hector Williamson,"Rodriguez, Melton and Martinez",williamwalker@hamilton.com,HealthTech,CTO,Demo Request,Prospecting,3,False,True,20,10,4,153035,1062,UK,2026-03-11
+78,Kristin Scott,Wallace-Green,vasquezjacob@flores-harris.biz,MarTech,VP of Marketing,Event,Demo Scheduled,17,True,False,0,4,1,666456,47,USA,2026-01-11
+79,Brianna Barber,"Davies, Zavala and Porter",cristinawoods@carroll.com,Cybersecurity,Head of Data,Event,Negotiation,17,False,True,5,4,0,877747,293,Germany,2025-04-21
+80,Caitlin Mann,"Estrada, Davis and Salazar",lisabarr@wheeler-roach.com,MarTech,CTO,Demo Request,Negotiation,39,True,False,1,11,4,1522621,268,India,2025-11-18
+81,Lori Santos,Holt-Murphy,mariosimmons@george.com,E-commerce,CTO,Referral,Demo Scheduled,80,False,True,2,2,2,61124122,4216,Germany,2026-03-18
+82,Cassandra Christensen,"Lucas, Johnson and Parrish",rosscharles@montgomery.com,Data Analytics,CTO,Referral,Closed Lost,56,False,False,24,8,1,4833486,3907,USA,2025-08-12
+83,Kevin Smith,Gray Group,jonathan90@wolf-clay.com,Cybersecurity,Chief Revenue Officer,Webinar,Closed Won,9,False,False,4,10,3,2432176,11,Germany,2025-09-30
+84,Matthew Gilbert,Fisher-Rogers,owilson@nolan.biz,AI/ML,VP of Customer Success,Partner Referral,Negotiation,112,False,False,3,6,2,8095702,43,Germany,2025-09-22
+85,Suzanne Reyes,"Duran, Owen and Johnson",cruzadam@johnston.com,HRTech,VP of Marketing,Inbound,Closed Won,48,False,True,3,5,4,220465,715,India,2026-02-19
+86,Melody Robinson,"White, Davis and Hayes",amberhansen@meadows.org,EdTech,CEO,Inbound,Demo Scheduled,24,False,False,10,5,0,250210,1251,Germany,2025-11-04
+87,Ashley Walker,Fleming-Parsons,hamiltonjuan@fields-lewis.biz,HealthTech,Chief Revenue Officer,Content Download,Proposal Sent,100,False,True,11,4,2,695164,907,USA,2025-08-01
+88,Evelyn Jackson,"Fox, Herman and Combs",vdawson@anderson.com,EdTech,VP of Engineering,Content Download,Proposal Sent,97,False,False,13,4,1,2909540,4486,India,2026-03-18
+89,Evelyn Wright,Smith Inc,stephen38@beck.com,EdTech,CEO,Event,Proposal Sent,28,False,True,0,3,2,3302417,111,India,2025-07-25
+90,Brian Clayton,Bautista-Skinner,qdavis@brown.net,Data Analytics,VP of Sales,Inbound,Proposal Sent,107,False,False,7,8,4,6941939,273,USA,2026-02-08
+91,Kimberly Jordan,"Vazquez, Sellers and Goodman",roberta54@hood.info,Cybersecurity,VP of Customer Success,Content Download,Negotiation,15,False,False,20,6,2,524707,44,Australia,2025-11-01
+92,April Pittman,Lyons Inc,jacob17@armstrong-williams.com,SaaS,VP of Marketing,Content Download,Negotiation,96,False,False,2,6,2,456005,1434,Germany,2025-08-04
+93,Melanie Hampton,Boyd-Hall,michaelfranklin@wilson.com,HealthTech,Senior Manager,Webinar,Demo Scheduled,19,False,False,4,3,0,33286644,14,Singapore,2025-10-04
+94,Denise Johnson,Garza Ltd,garciabecky@hanson-roberts.com,E-commerce,VP of Engineering,Demo Request,Closed Won,111,False,False,20,9,2,6303930,4122,Canada,2025-10-02
+95,Stephanie Anderson,Chavez LLC,vdorsey@fisher.com,EdTech,VP of Customer Success,Cold Outreach,Demo Scheduled,5,False,True,9,7,3,159653,1239,Germany,2025-06-22
+96,Kelsey Shepard,Williams-Ellis,ufields@moreno-allen.com,HRTech,Chief Revenue Officer,Demo Request,Negotiation,84,False,False,1,7,4,6394323,127,USA,2026-03-30
+97,John Wilkinson,Stewart-Mosley,sarah43@chen.com,Cybersecurity,CFO,Referral,Negotiation,57,False,True,1,3,3,649525,240,Australia,2025-09-07
+98,Elizabeth Harris,Davidson-Daniels,harpermarcus@chandler-cruz.org,Cybersecurity,COO,Cold Outreach,Closed Lost,13,False,False,10,1,2,7485471,358,USA,2025-10-30
+99,Brian Smith,Collins PLC,gamblekathleen@roth.info,MarTech,COO,Inbound,Demo Scheduled,17,False,False,22,10,3,51551377,29,India,2025-09-24
+100,Jennifer Howe,"Massey, Fitzgerald and Cooper",jacksoncrystal@fisher-cooper.com,HRTech,CTO,Content Download,Negotiation,28,False,True,11,4,1,458332,129,Singapore,2025-12-06

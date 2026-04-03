@@ -1,0 +1,52 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    2
+Contact:    Joseph Young
+Title:      Director of Product
+Company:    Reed Group
+Industry:   AI/ML
+Employees:  266
+Revenue:    $717,889
+Source:     Event
+Has Budget: False
+====================
+
+Alex: "Good morning, Joseph? This is Alex from Synergy AI."
+Joseph Young: "Good morning, Alex. Yes, speaking. How can I help you?"
+Alex: "Thanks for taking my call, Joseph. I know it's been a little while, but you connected with us at the AI Forward Summit back in March, and specifically requested a demo of our MLOps platform. I wanted to follow up, introduce myself properly, and see if now might be a better time to pick up that conversation."
+Joseph Young: "Ah, yes, the summit. Time flies! I do remember stopping by your booth. We were quite busy that day. Thanks for reaching out again."
+Alex: "No problem at all, I completely understand how those events can be. Just to confirm, you're the Director of Product at Reed Group, correct?"
+Joseph Young: "That's right."
+Alex: "Excellent. So, Joseph, to make sure I'm respectful of your time today, I’d love to spend just about 10-15 minutes understanding a bit more about what initially piqued your interest in Synergy AI, and what your role at Reed Group entails. Does that sound like a good use of our time?"
+Joseph Young: "Yeah, 10-15 minutes works for me. We're always looking at new tech, so I'm happy to chat."
+
+Alex: "Great. So, Joseph, Reed Group operates in the AI/ML space. Could you give me a high-level overview of the kinds of AI/ML projects or products your team is currently focused on developing and deploying?"
+Joseph Young: "Sure. We're primarily a services firm, building bespoke AI/ML solutions for our clients. Everything from natural language processing models for customer service automation to predictive maintenance algorithms for manufacturing. We also have a few internal product initiatives we're trying to spin up, mostly around data annotation and model explainability for specific verticals."
+Alex: "That's a really interesting mix. So, you're not just deploying internal products, but also managing client-facing model deployments. With that kind of diversity, what are some of the biggest challenges you and your teams face when it comes to getting those AI/ML models out of the lab and into production, or even maintaining them once they're live?"
+Joseph Young: "Hmm, where to start? One big one is simply the velocity. Our clients expect quick turnarounds, and often the iteration cycles are slow. We spend a lot of time on manual deployment steps, testing, and then once it's out there, tracking performance across different client environments is a nightmare. It feels like every project reinvents the wheel a bit. And frankly, with the volume of models we're managing, detecting things like data drift or concept drift quickly is a constant fire drill. Our data science teams are spending too much time on operations and not enough on actual model improvement."
+Alex: "That makes a lot of sense. So, if I'm hearing you correctly, it sounds like model deployment consistency, speed, and then ongoing monitoring and drift detection are major headaches, which are then compounded by managing multiple client environments. And that's pulling your data scientists away from their core work. Is that an accurate summary?"
+Joseph Young: "Exactly. It's a significant drain on resources. We have 266 employees, but our data science team is relatively lean, and their time is incredibly valuable."
+Alex: "Absolutely. I can see how that would be a critical bottleneck, especially as a services firm where efficiency directly impacts your profitability and client satisfaction. What are you currently using to manage this entire lifecycle—from deployment to monitoring? Is it a collection of scripts, open-source tools, or something else?"
+Joseph Young: "Mostly open-source tools cobbled together with a lot of custom Python scripts. We use MLflow for tracking some experiments, Prometheus for some basic monitoring, and then a lot of bespoke CI/CD pipelines. It works, but it's fragile and takes a lot of maintenance effort from our engineering and data science leads."
+Alex: "I've heard that story many times. That 'frustration' with the fragility and maintenance, how does that manifest as a problem for you specifically, as Director of Product? What kind of impact does it have on your ability to deliver products or services to your clients?"
+Joseph Young: "Well, for our client projects, it means longer delivery times and higher project costs because of the manual effort involved. We sometimes struggle to meet SLAs for model performance, and explaining why a model's accuracy dipped to a client isn't easy when we can't pinpoint the issue quickly. For our internal products, it just slows everything down. We're trying to move faster, innovate, but we're constantly fighting fires with our current infrastructure."
+
+Alex: "I really appreciate you sharing that, Joseph. It sounds like you're caught between the demand for speed and reliability, and the limitations of your current, somewhat Frankenstein-esque MLOps setup. If you could wave a magic wand and solve one of those problems – the slow deployment, the inconsistent monitoring, or the difficulty of identifying drift – which one would have the biggest positive impact on Reed Group right now?"
+Joseph Young: "That's a tough one, they're all interconnected. But if I had to pick, it would be the proactive identification of data and concept drift, and then having a streamlined way to retrain and redeploy models. That's where we see the biggest risk and time sink. It impacts client trust directly."
+Alex: "That's a very clear priority. Now, just shifting gears slightly, Joseph. You mentioned you requested a demo back in March. At that time, were you actively looking for a solution, or was it more exploratory, just gathering information?"
+Joseph Young: "Mostly exploratory. We knew we had these problems, but we weren't in an active 'buying cycle,' if that makes sense. We were just seeing what was out there."
+Alex: "It absolutely makes sense. Many of our customers start that way. So, given the challenges you've outlined today, particularly around drift detection and streamlined retraining – if you *were* to consider bringing in a specialized MLOps platform to address those, what would the typical process look like at Reed Group? Is there a budget set aside for this kind of strategic investment, or would that need to be built?"
+Joseph Young: "That's a good question. As of right now, there isn't a dedicated budget line item for a comprehensive MLOps platform. We operate on a project-by-project basis for a lot of our tooling. For something like this, it would definitely need to be justified, likely involving our CTO and maybe even our CEO, depending on the scale. We're a relatively lean organization, so every investment needs a clear ROI."
+Alex: "Understood. A clear ROI is crucial, especially for a company like Reed Group where efficiency and client delivery are paramount. In terms of timing, is this a problem you're looking to solve in the next three to six months, or is it more of a longer-term strategic initiative, perhaps something you'd revisit in the next year?"
+Joseph Young: "Honestly, it's becoming more urgent. We're seeing more complex models, more demanding client contracts. I'd say we'd want to *address* it within the next six to nine months, but the budget part is the bigger hurdle than the timeline for us right now."
+Alex: "I hear you on the budget front. It's a common challenge, especially when moving from bespoke solutions to a more comprehensive platform. My goal today wasn't to push for a decision, but to understand if the pains you're experiencing are something Synergy AI could genuinely help solve. From what you've shared, particularly around the drift detection, monitoring across environments, and freeing up your data scientists, it sounds like there could be a strong alignment."
+Joseph Young: "It does sound like your platform addresses some key areas we struggle with. The drift detection capabilities sounded particularly interesting at the summit."
+
+Alex: "Excellent. So, Joseph, based on our conversation today, and particularly your focus on proactive drift detection and streamlined retraining, I think a more in-depth demonstration of Synergy AI's capabilities would be valuable. Not just a generic demo, but one tailored to show you exactly how we tackle those specific challenges you've highlighted, and perhaps even touch on how we help other services firms manage multiple client deployments efficiently. Would you be open to scheduling a follow-up call, perhaps with one of my technical specialists, to walk through that next week?"
+Joseph Young: "That could be useful. As I said, we're not actively buying, but learning more about solutions that can genuinely improve our workflow is always welcome. Just to manage expectations, we'd still have to figure out the budget internally even if it's a perfect fit."
+Alex: "Absolutely, Joseph, and I completely respect that. This next step would simply be about exploring the 'how,' so you have all the information you need if and when Reed Group decides to move forward. How about we look at some time next week? Would Thursday afternoon or Friday morning work for you?"
+Joseph Young: "Let me check my calendar... Friday morning might be better. Say, 10 AM Pacific?"
+Alex: "Perfect, 10 AM Pacific on Friday. I'll send over a calendar invite with a brief agenda, confirming that we'll focus on drift detection, monitoring across multiple environments, and how we empower data scientists. Joseph, is there anyone else on your team – perhaps a lead MLOps engineer or your CTO – who you think should join this more technical dive?"
+Joseph Young: "Maybe our lead MLOps engineer, Sarah Chen. She's the one currently wrestling with a lot of these deployment issues. I can invite her once I see the invite."
+Alex: "Excellent suggestion. I'll make sure the invite allows for additional attendees. Joseph, thanks again for your time today. It was really insightful learning about Reed Group's challenges. I look forward to our chat on Friday."
+Joseph Young: "Thanks, Alex. Looking forward to it."

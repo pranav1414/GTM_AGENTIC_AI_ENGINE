@@ -1,0 +1,70 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    18
+Contact:    Deborah Williams
+Title:      CEO
+Company:    Conway-Riley
+Industry:   HRTech
+Employees:  1056
+Revenue:    $159,642
+Source:     Webinar
+Has Budget: True
+====================
+
+**Call Transcript**
+
+**Call Context:**
+*   **Sales Rep:** Alex
+*   **Prospect:** Deborah Williams, CEO at Conway-Riley (HRTech, ~1056 employees)
+*   **Lead source:** Webinar
+*   **Has budget confirmed:** True
+*   **In buying stage:** False
+*   **Number of demo requests:** 4
+*   **Days since last activity:** 21
+*   **Annual revenue (interpreted as 'revenue impacted by current inefficiencies' to make sense with company size and budget confirmation):** $159,642
+
+---
+
+**Alex:** Good morning, Deborah! Thanks so much for taking the time today. It's Alex from [Your Company Name]. How's your week shaping up so far?
+
+**Deborah Williams:** Good morning, Alex. My pleasure. It’s been a bit hectic, as usual, but good. We’re in the middle of our Q3 planning, so lots of strategic discussions happening.
+
+**Alex:** I can imagine! Q3 planning always brings its own unique energy. Well, I appreciate you carving out this slot. I know we’ve had a few touchpoints recently. I saw you registered for our "Future of Talent Acquisition" webinar about a month ago, and since then, we’ve actually had a few demo requests come through from Conway-Riley – which is fantastic! We just haven't been able to connect properly. What piqued your interest initially, after the webinar?
+
+**Deborah Williams:** Yes, the webinar was quite insightful, especially the segment on AI-driven candidate matching. As a company that helps other businesses streamline their HR processes, we're always looking for ways to improve our own internal systems. The multiple demo requests probably reflect a growing internal consensus that our current recruitment tech stack is becoming a bottleneck.
+
+**Alex:** That's really helpful context, Deborah. A bottleneck in recruitment for an HRTech company must be particularly frustrating. Could you elaborate a bit on what specific challenges you're experiencing with your current recruitment tech stack? What does that "bottleneck" look like day-to-day for your teams?
+
+**Deborah Williams:** Absolutely. Our core business is providing HR solutions, but ironically, our own internal talent acquisition process feels… cumbersome. We’ve grown quite a bit, from a few hundred employees to over a thousand in the last couple of years, and our legacy ATS just isn't scaling with us. Our hiring managers complain about the lengthy time-to-hire, the quality of candidates we're getting, and the sheer administrative burden. We're losing out on top talent because our process is too slow and disjointed.
+
+**Alex:** "Losing out on top talent due to slow and disjointed processes" – that's a significant pain point, especially in the competitive HRTech space where talent is everything. When you say "quality of candidates," what specifically are you seeing that’s not quite hitting the mark? Are you struggling to find niche skills, or is it more about cultural fit and overall candidate experience?
+
+**Deborah Williams:** It's a bit of both, honestly. We need very specific technical and product development skills, and our current system's search functionality and initial screening capabilities aren't robust enough. We spend far too much time manually sifting through applications. But beyond that, the candidate experience itself needs a massive overhaul. Candidates are dropping off because our application process is clunky, and feedback loops are slow. We preach efficiency to our clients, and our own house isn’t entirely in order there. We've even estimated that the inefficiencies are costing us roughly $150,000 annually in lost productivity and missed hiring opportunities for critical roles.
+
+**Alex:** Wow, $150,000 in annual impact – that's a concrete figure. It sounds like you're not just looking for a new tool, but something that can really transform your recruitment process end-to-end, from intelligent sourcing to a seamless candidate journey, and ultimately, a better hiring outcome. What kind of impact do you think improving these areas could have on Conway-Riley as a whole, beyond just filling roles faster?
+
+**Deborah Williams:** It's critical for our future growth. If we can't efficiently acquire the right talent, we can't build the innovative solutions our clients expect. It impacts our product roadmap, our service delivery, and ultimately, our reputation. Plus, our internal HR team is stretched thin just managing the current system. Better tech would free them up for more strategic, value-added work.
+
+**Alex:** That makes perfect sense. It’s about empowering your teams and enabling your strategic vision. Given this pressing need and the estimated financial impact, do you have a specific initiative or budget line item dedicated to improving your talent acquisition infrastructure this year?
+
+**Deborah Williams:** Yes, we do. We’ve allocated resources to explore new solutions for our internal TA needs. It’s a priority for Q4, or early next year at the latest. We want to ensure we're making a strategic investment, not just a quick fix. We’re not in a rush to sign a contract tomorrow, but we are actively researching and evaluating options to make an informed decision.
+
+**Alex:** That's great to hear, Deborah. Having a dedicated budget and a strategic mindset is exactly what we look for in partners. It sounds like you're still early in the evaluation stage, which is perfectly fine. My goal today was really just to understand your challenges more deeply. Have you started looking at any other solutions, or what does your internal process typically look like for evaluating new technology partners?
+
+**Deborah Williams:** We’ve had a few initial conversations, but nothing in-depth. Our process usually involves gathering requirements from our HR and hiring managers, then shortlisting potential vendors, and finally, getting a more detailed demonstration for key stakeholders. Our main concern is always integration with our existing HRIS and ensuring minimal disruption during implementation. We can't afford significant downtime.
+
+**Alex:** That's a very valid concern – integration and minimal disruption are absolutely key, especially for a company of your size and complexity. Our platform is designed with extensive integration capabilities and a phased implementation approach precisely to address those issues. So, based on what we've discussed today – the challenges with scaling your current ATS, the need for better candidate quality and experience, and the significant financial impact you've identified – how would you feel about us scheduling a more in-depth, tailored demonstration? We could specifically focus on how our AI-driven matching and streamlined candidate journey features could address those $150,000 in inefficiencies, and also walk through our integration capabilities.
+
+**Deborah Williams:** That sounds like a logical next step. I think a more focused demo would be beneficial. Who else from Conway-Riley should ideally be on that call? I'd want our Head of Talent Acquisition and potentially our Head of HR Operations to be involved.
+
+**Alex:** Perfect. Having them there would be ideal, as they're the ones on the front lines daily. How about we aim for sometime in the next couple of weeks? I can send over a calendar invite with a few options, and we can make sure the agenda covers those specific points we just discussed. Would Thursday the 19th or Friday the 20th work for you to review some options?
+
+**Deborah Williams:** Let me check my calendar. Hmm, the 19th is a bit tight, but the 20th, perhaps in the afternoon? Let's say 2 PM ET?
+
+**Alex:** Fantastic, Deborah. I'll send that invite over for Friday, October 20th, at 2 PM ET, including the Head of Talent Acquisition and Head of HR Operations. I'll also add a brief agenda to the invite. If anything changes, please don't hesitate to let me know. Really appreciate your time and insights today.
+
+**Deborah Williams:** Sounds good, Alex. Looking forward to it.
+
+**Alex:** You too. Have a great rest of your week!
+
+---

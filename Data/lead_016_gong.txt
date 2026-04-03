@@ -1,0 +1,68 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    16
+Contact:    Kelly Oconnor
+Title:      Director of Operations
+Company:    Wolfe-Rose
+Industry:   FinTech
+Employees:  258
+Revenue:    $783,823
+Source:     Demo Request
+Has Budget: True
+====================
+
+**Alex:** Hi Kelly, thanks for jumping on. Alex from [Your Company Name] here. How's your Thursday going so far?
+
+**Kelly Oconnor:** Hey Alex, it's going well, thanks. Busy as always, you know how it is in FinTech. Appreciate you finding the time to connect.
+
+**Alex:** Absolutely, my pleasure. I saw your demo request come through last week, and I was keen to understand a bit more about what prompted you to reach out. Before we dive in, I just wanted to quickly confirm you've carved out about 10-15 minutes for our chat, is that still good for you?
+
+**Kelly Oconnor:** Yeah, 10-15 minutes is perfect. And no problem at all, just wanted to explore options, as things are getting a bit... complicated on our end.
+
+**Alex:** Understood, "complicated" is a word I hear often in this space! To make sure I use our time effectively, my goal today is just to learn more about Wolfe-Rose, the specific challenges you’re facing as Director of Operations, especially after seeing you work in FinTech, and then we can explore if what we do might even be a good fit. Does that sound like a good plan for you?
+
+**Kelly Oconnor:** That sounds great, Alex. Fire away.
+
+**Alex:** Excellent. So, Kelly, starting broad, what's currently top of mind for you and your team at Wolfe-Rose? What prompted you to look into solutions like ours right now?
+
+**Kelly Oconnor:** Well, we’ve grown quite a bit over the past few years, especially with some of our niche derivatives trading platforms. And with that growth, our operational processes, particularly around client onboarding and compliance, have become a real bottleneck. We're spending an insane amount of time manually verifying KYC documents, cross-referencing against watchlists, and trying to keep up with the ever-evolving regulatory landscape.
+
+**Alex:** That's a classic challenge in FinTech. When you say "insane amount of time," could you elaborate a little on the impact that's having? Are we talking about delayed client activations, increased compliance risk, or something else?
+
+**Kelly Oconnor:** All of the above, honestly. Our client activation times are far too long. It can take up to a week to get a new institutional client fully onboarded, and frankly, that's just not competitive anymore. We're seeing drop-offs, and it reflects poorly on us. Then there's the human error aspect – mistakes happen when you're dealing with such high volumes and manual checks, which opens us up to regulatory fines, especially with new AML directives coming into play. Our current system is just too fragmented.
+
+**Alex:** So, the fragmentation in your current system is leading to delays, potential client churn, and increased risk of non-compliance and fines. That paints a pretty clear picture. Could you tell me a bit more about what that "fragmented system" looks like today? Are you working with multiple disparate tools, or is it primarily a lot of spreadsheets and manual data entry?
+
+**Kelly Oconnor:** It's a mix. We have a legacy CRM, a separate risk assessment tool that doesn't really talk to anything, and then yes, a ton of spreadsheets for tracking progress and exceptions. Our compliance officers spend more time data hunting and reconciling than actually analyzing risk. It’s a huge drain on resources. We’ve got 258 employees, but it feels like 50 of them are just managing paperwork.
+
+**Alex:** Wow, that’s a significant portion of your workforce tied up in administrative tasks. And with the complexities of derivatives trading, I imagine the data points you're trying to manage are quite intricate. What kind of impact does this have on your overall operational efficiency and, say, your ability to scale new offerings?
+
+**Kelly Oconnor:** It absolutely limits our agility. Every time we want to launch a new product or enter a new market, it’s a massive undertaking to adjust our compliance and onboarding workflows. It's like trying to turn a supertanker in a swimming pool. We lose opportunities because we simply can't adapt fast enough, or the operational overhead eats into any potential profit.
+
+**Alex:** I hear you. It sounds like a significant drag on innovation and growth. You mentioned in your demo request that you have budget allocated for a solution to these issues. Is that still the case, and do you have a specific timeline in mind for when you'd ideally like to have these challenges addressed?
+
+**Kelly Oconnor:** Yes, the budget is there. Our CFO understands the cost of *not* solving this. We're aiming to have something in place and making a tangible impact within the next 6-9 months, ideally sooner if possible. We have an audit coming up next year that we really want to be prepared for, and streamlining these processes is key.
+
+**Alex:** Six to nine months sounds like a reasonable goal given the scope. Are there any particular concerns or hesitations you have about bringing in a new solution, given the current complexity and entrenched processes you've described?
+
+**Kelly Oconnor:** My main concern is integration, honestly. We have a lot of existing systems that we can't just rip out overnight. Whatever we bring in needs to play nicely with our core trading platforms and our existing data warehouses. The last thing I want is another siloed system adding to the headache. And, of course, the implementation timeline and user adoption – we can’t afford a massive disruption.
+
+**Alex:** That's a very valid concern, Kelly, and one we encounter frequently. Our platform is designed with extensive API capabilities precisely for that reason, to integrate with existing infrastructure rather than forcing a complete overhaul. So, it sounds like if we could show you a solution that streamlines your KYC and compliance, reduces client onboarding time, mitigates risk, and integrates seamlessly without major disruption, that would be a significant win for Wolfe-Rose?
+
+**Kelly Oconnor:** That would be huge, Alex. A really big win.
+
+**Alex:** Fantastic. Based on what you’ve shared, Kelly, I think a more tailored demonstration of how our platform specifically addresses those pain points around fragmented compliance workflows, slow onboarding, and integration challenges would be a valuable next step. I can show you examples of how other FinTech firms are leveraging our AI-driven identity verification and automated compliance monitoring to achieve exactly what you're looking for. Would you be open to scheduling that, perhaps for sometime next week?
+
+**Kelly Oconnor:** Yeah, that makes sense. I’d like to see how it actually works in practice. How long would that demo take?
+
+**Alex:** I'd typically set aside 45 minutes to an hour to give us enough time to walk through the relevant features and answer your questions thoroughly. We can adjust it based on your availability.
+
+**Kelly Oconnor:** Okay, an hour sounds good. Let me check my calendar. How about Tuesday, the 23rd, at 11 AM Eastern?
+
+**Alex:** Tuesday, the 23rd at 11 AM Eastern works perfectly for me. I'll send over a calendar invite right after this call with a brief agenda. In the meantime, is there anything specific you’d like me to prepare or focus on for that demo, perhaps any specific compliance regulations that are particularly challenging for you?
+
+**Kelly Oconnor:** Just focus on the KYC/AML side and the integration points you mentioned. Showing how we can reduce the manual effort there would be key.
+
+**Alex:** Understood. I'll make sure to highlight those areas. Thanks again for your time today, Kelly. I look forward to connecting again on the 23rd.
+
+**Kelly Oconnor:** Thanks, Alex. Talk soon.

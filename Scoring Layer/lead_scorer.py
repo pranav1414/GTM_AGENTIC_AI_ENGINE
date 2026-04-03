@@ -2,22 +2,21 @@
 Layer 3 — Lead Scorer
 Orchestrates per-lead scoring by combining structured CRM fields
 from leads_final with semantic context chunks from Layer 2.
-Uses Groq (free) as the LLM judge — llama3-70b-8192.
+Uses Gemini 2.5 Flash as the LLM judge.
 """
 
 import json
 import os
 from typing import Any
+from google import genai
 
-from groq import Groq
-
-# Layer 2 retriever — import the front door
+# Layer 2 retriever
 from layer2 import get_retriever
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-TOP_K_CHUNKS = 5          # how many context chunks to pull per lead
-SCORE_MODEL = "llama-3.1-8b-instant"
+TOP_K_CHUNKS = 5
+SCORE_MODEL  = "gemini-2.5-flash"
 OUTPUT_PATH  = "scored_leads.json"
 
 SCORING_PROMPT = """You are an expert B2B sales analyst. Your job is to score a lead's readiness to buy on a scale of 0 to 100.
@@ -49,7 +48,6 @@ Respond ONLY in this exact JSON format — no preamble, no markdown:
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def _format_crm(lead: dict[str, Any]) -> str:
-    """Pretty-print the structured CRM fields for the prompt."""
     fields = [
         ("Lead ID",       lead.get("lead_id", "unknown")),
         ("Company",       lead.get("company_name", "—")),
@@ -65,7 +63,6 @@ def _format_crm(lead: dict[str, Any]) -> str:
 
 
 def _format_chunks(chunks: list[str]) -> str:
-    """Number and join retrieved context chunks."""
     if not chunks:
         return "  No transcript or context available for this lead."
     return "\n\n".join(f"  [{i+1}] {chunk.strip()}" for i, chunk in enumerate(chunks))
@@ -74,41 +71,28 @@ def _format_chunks(chunks: list[str]) -> str:
 # ── Core scoring function ─────────────────────────────────────────────────────
 
 def score_lead(lead: dict[str, Any], retriever=None) -> dict[str, Any]:
-    """
-    Score a single lead dict.
-
-    Args:
-        lead:      A row from leads_final (dict with CRM fields).
-        retriever: Optional pre-built Layer 2 retriever. If None, one is
-                   created automatically (useful for batch runs).
-
-    Returns:
-        The original lead dict with score, tier, reasoning, and top_signals added.
-    """
     if retriever is None:
         retriever = get_retriever()
 
     lead_id = str(lead.get("lead_id", ""))
 
     # 1. Pull semantic context from Layer 2
-    query   = f"{lead.get('company_name', '')} {lead.get('job_title', '')} {lead.get('notes', '')}"
-    chunks  = retriever.get_relevant_chunks(query=query, lead_id=lead_id, k=TOP_K_CHUNKS)
+    query  = f"{lead.get('company_name', '')} {lead.get('job_title', '')} {lead.get('notes', '')}"
+    chunks = retriever.get_relevant_chunks(query=query, lead_id=lead_id, k=TOP_K_CHUNKS)
 
     # 2. Build the prompt
     prompt = SCORING_PROMPT.format(
-        crm_data      = _format_crm(lead),
+        crm_data       = _format_crm(lead),
         context_chunks = _format_chunks(chunks),
     )
 
-    # 3. Call the LLM judge (Groq — free tier)
-    client   = Groq()
-    response = client.chat.completions.create(
+    # 3. Call Gemini 2.5 Flash
+    gemini_client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    response      = gemini_client.models.generate_content(
         model    = SCORE_MODEL,
-        messages = [{"role": "user", "content": prompt}],
-        max_tokens = 512,
+        contents = prompt,
     )
-
-    raw_text = response.choices[0].message.content.strip()
+    raw_text = response.text.strip()
 
     # 4. Parse LLM response
     from score_parser import parse_score
@@ -129,18 +113,9 @@ def score_lead(lead: dict[str, Any], retriever=None) -> dict[str, Any]:
 # ── Batch runner ──────────────────────────────────────────────────────────────
 
 def score_all_leads(leads: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """
-    Score every lead in the list and write results to DuckDB.
-
-    Args:
-        leads: List of lead dicts loaded from leads_final.
-
-    Returns:
-        List of scored lead dicts, sorted by final_score descending.
-    """
     from duckdb_writer import write_scores_batch
 
-    retriever = get_retriever()   # build once, reuse for all leads
+    retriever = get_retriever()
     scored    = []
 
     for i, lead in enumerate(leads):
@@ -154,10 +129,8 @@ def score_all_leads(leads: list[dict[str, Any]]) -> list[dict[str, Any]]:
             print(f"ERROR: {e}")
             scored.append({**lead, "score": 0, "final_score": 0, "tier": "Error", "reasoning": str(e)})
 
-    # Sort hot leads to the top
     scored.sort(key=lambda x: x.get("final_score") or 0, reverse=True)
 
-    # Write to DuckDB — unified data layer for Layer 4
     written = write_scores_batch(scored)
     print(f"\nScored {len(scored)} leads → DuckDB ({written} rows written)")
     return scored

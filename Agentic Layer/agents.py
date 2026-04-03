@@ -5,9 +5,9 @@ from layer4.tools import chroma_retriever_tool, rules_engine_tool
 
 def get_llm():
     return LLM(
-    model="groq/llama-3.1-8b-instant",
-    api_key=os.environ.get("GROQ_API_KEY"),
-)
+        model="gemini/gemini-2.5-flash",
+        api_key=os.environ.get("GEMINI_API_KEY"),
+    )
 
 
 def build_agents():
@@ -38,7 +38,7 @@ def build_agents():
         ),
         backstory=(
             "You are a GTM strategist who applies both hard business rules and nuanced "
-            "judgment. You know that a rule saying 'score > 80 = high priority' is a "
+            "judgment. You know that a rule saying score > 80 = high priority is a "
             "starting point, not the whole picture — context from transcripts and "
             "behaviour can override the raw score."
         ),
@@ -57,7 +57,7 @@ def build_agents():
         backstory=(
             "You are a meticulous formatter. You receive plain-language decisions "
             "and convert them into consistent, machine-readable JSON every time. "
-            "You never add fields that weren't in the input and never omit required ones."
+            "You never add fields that were not in the input and never omit required ones."
         ),
         tools=[],
         llm=llm,

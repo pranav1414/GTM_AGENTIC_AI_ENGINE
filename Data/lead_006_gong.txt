@@ -1,0 +1,60 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    6
+Contact:    Gary Price
+Title:      VP of Marketing
+Company:    Lee-Reeves
+Industry:   HRTech
+Employees:  158
+Revenue:    $38,317,637
+Source:     Webinar
+Has Budget: True
+====================
+
+**Alex:** Hi Gary, Alex from [Our Company Name] here. Thanks for taking the time today.
+
+**Gary Price:** Hi Alex, good to connect. I appreciate you following up.
+
+**Alex:** Absolutely. I know it's been a little while since you attended our "Future of Talent Acquisition" webinar and requested a couple of demos – about 7 weeks, if my notes are right. Things can get pretty hectic in marketing, especially for a growing HRTech company like Lee-Reeves. How have things been since then?
+
+**Gary Price:** No worries at all, Alex. You're right, it's been non-stop. We actually just closed out a really strong Q3, which is great, but it's also highlighted some of the very challenges that pushed me to register for that webinar in the first place.
+
+**Alex:** That makes perfect sense. And thanks for being so candid. To make sure our conversation is valuable for you today, my goal is to really understand what's currently happening on your end at Lee-Reeves – what challenges you're facing, what your ideal state looks like, and essentially, what prompted you to look into solutions like ours. Does that sound like a good plan for the next 15-20 minutes?
+
+**Gary Price:** Yeah, that sounds good. I'm keen to see if there's a good fit.
+
+**Alex:** Great. So, you mentioned the Q3 results highlighting challenges. Could you elaborate a bit on what those are, particularly from your vantage point as VP of Marketing at an HRTech company? I imagine you're deeply involved in employer branding, candidate experience, and perhaps even how new clients perceive your internal processes.
+
+**Gary Price:** You hit the nail on the head, Alex. From a marketing perspective, our external messaging around being an innovative HRTech solution doesn't always align with our internal candidate experience. We're growing, right? 158 employees now, and we're looking to scale rapidly in the next 12-18 months. The volume of candidates we're seeing for key roles – especially in product development and sales – has surged.
+
+**Alex:** That's a great problem to have, in some ways. More interest means you're doing something right with your brand.
+
+**Gary Price:** Exactly. But the "problem" part is our current system. We're still using a combination of an older Applicant Tracking System, which frankly, is more of a resume black hole, and a lot of manual outreach via email and spreadsheets. Our candidates often feel ignored, or they get a generic email weeks later. This directly impacts our employer brand and makes us look less sophisticated than we tell our *own* customers they should be. It's ironic, and it's damaging.
+
+**Alex:** I can certainly see how that creates a disconnect. So, if I'm hearing you correctly, the disjointed candidate experience is a major pain point, and it's particularly acute because it undermines the very value proposition Lee-Reeves offers to the market. What impact is this having on your ability to secure top talent or meet those scaling goals you mentioned?
+
+**Gary Price:** Well, we're seeing higher drop-off rates in the interview process. Candidates who are highly qualified often move on to competitors who offer a smoother, more engaging experience. We're losing out on great people simply because our process is clunky and slow. And from my marketing team's perspective, we spend a lot of resources generating interest, driving traffic to career pages, creating compelling content about our culture, but then the experience itself fails to deliver. We can't even easily track where candidates are falling out of the funnel or personalize communications effectively. It feels like we're burning money on top-of-funnel without a robust system to nurture candidates through.
+
+**Alex:** That's a significant concern. Losing top talent due to a poor candidate experience is costly in so many ways – lost productivity, impact on team morale, and as you said, the integrity of your brand. If you were to imagine an ideal scenario for Lee-Reeves, what would that look like in terms of managing your talent acquisition and candidate experience? What would success metrics be for you in that area?
+
+**Gary Price:** Ideally, we'd have a system that integrates seamlessly with our existing HRIS, allowing us to manage the entire candidate journey from first touchpoint to hire. We need a way to automate personalized communications, provide transparency to candidates, and give our hiring managers and recruiters a single source of truth. From a marketing standpoint, I'd love to be able to A/B test messaging at different stages, track conversion rates throughout the funnel, and ultimately, demonstrate a clear ROI on our employer branding efforts. We want to reduce time-to-hire, improve candidate satisfaction scores, and actually convert those interested candidates into happy employees.
+
+**Alex:** That's very clear, Gary, and our platform is designed specifically to address those kinds of challenges. It sounds like you're looking for something that goes beyond a basic ATS – a comprehensive solution that truly enhances the candidate journey and provides actionable data. Speaking of solutions, you've requested a couple of demos and attended our webinar, which suggests you're actively exploring options. Do you have a timeline in mind for when you'd ideally like to have a new system implemented, and have you already allocated a budget for this kind of project?
+
+**Gary Price:** Yes, the budget has actually been approved and allocated for a new talent acquisition platform this fiscal year. We've seen enough evidence that this is a critical need. In terms of timeline, we're hoping to make a decision and ideally begin implementation within the next three to four months. We really want to have something fully operational well before the end of the year to support our growth plans for next year. The challenge is ensuring whatever we pick integrates well with our existing Workday HRIS. That's a non-negotiable for us.
+
+**Alex:** That's fantastic news about the budget and timeline; it gives us a clear runway to work with. And I completely understand the importance of seamless integration with Workday. That's a common requirement, and I can tell you upfront that our platform has robust, out-of-the-box integrations with Workday, and we've successfully implemented it for companies of similar size and complexity to Lee-Reeves.
+
+**Gary Price:** That's good to hear. It's always a big sticking point. We've looked at other solutions in the past that promised integration only for it to be a nightmare during implementation.
+
+**Alex:** Absolutely. We can definitely dive deeper into our integration capabilities during a demo, and even show you some examples. So, based on what we've discussed today – the need for a more engaging candidate experience, better tracking and personalization, and a platform that supports your aggressive growth plans – I'd suggest our next step is to schedule that personalized demo for you. We can tailor it specifically to show how our platform addresses those pain points you've highlighted, especially around employer branding, candidate communication, and Workday integration. Would you also want to invite your Head of Talent Acquisition or anyone else from HR who would be a key stakeholder in evaluating a new system?
+
+**Gary Price:** Yes, absolutely. I'd definitely want our Head of Talent Acquisition, Sarah Chen, and probably one of her lead recruiters, Mark. They're on the front lines, and their buy-in is crucial. And yes, a tailored demo sounds perfect. We need to see how it looks in action, not just hear about it.
+
+**Alex:** Excellent. I'll send you a calendar invite with a few time slots for next week – maybe Tuesday or Wednesday work best? I'll also include Sarah and Mark on the invite for you to forward, or I can reach out to them directly if you prefer to make an introduction. My goal would be to prepare a demo that really speaks to your collective needs. I'll also send a quick email summarizing our conversation today, so we have a clear record.
+
+**Gary Price:** Next week sounds good, Alex. Let's aim for early next week if possible. And if you could CC me on an intro email to Sarah and Mark, that would be great. I'll make sure they're prepped.
+
+**Alex:** Perfect. I'll get that over to you right after our call. Gary, thank you again for your time today, and for sharing so much valuable insight into Lee-Reeves' challenges and goals. I'm really looking forward to showing you what we can do.
+
+**Gary Price:** Thanks, Alex. Looking forward to the demo.

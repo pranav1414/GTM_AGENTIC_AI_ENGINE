@@ -1,0 +1,64 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    8
+Contact:    Ryan Kane
+Title:      Head of Data
+Company:    Escobar-Davis
+Industry:   SaaS
+Employees:  2559
+Revenue:    $61,220,073
+Source:     Cold Outreach
+Has Budget: True
+====================
+
+Alex: Hi Ryan, Alex from [Your Company Name] here. Thanks so much for taking the time today. I know it's been a little while since we last connected – looks like about 77 days since you requested those demos back in [Month of previous activity]. I really appreciate you carving out this slot.
+
+Ryan Kane: Hey Alex, no problem at all. Good to finally connect. Yeah, things got pretty hectic here for a bit, as they often do in a fast-growing SaaS environment. We had a major product launch that took priority, but we're circling back now.
+
+Alex: Totally understand. Product launches are always a whirlwind. I recall seeing you'd actually requested three different demos from us over the past few months. Could you give me a quick sense of what initially caught your eye or what prompted that interest, even back then?
+
+Ryan Kane: Sure. As Head of Data, my team is constantly trying to balance empowering our internal stakeholders – product, marketing, customer success – with reliable, real-time insights, while also managing the backend complexity. We use a variety of tools – Salesforce, Amplitude, Zendesk, Marketo – and getting a unified, consistent view of our customer data is... challenging, to say the least. The initial interest was really around simplifying our data pipelines and improving data quality without having to constantly pull engineering resources.
+
+Alex: That makes a lot of sense. "Challenging" is a word we hear quite a bit. Could you elaborate a bit more on what those challenges look like for your team at Escobar-Davis? What specific pains are you feeling right now with your current setup?
+
+Ryan Kane: Well, a big one is data consistency across departments. For example, our marketing team might pull data on MQLs from Marketo, but then product looks at active users in Amplitude, and sales uses Salesforce. Reconciling those numbers for a true 'customer 360' view, especially as we onboard more customers, is almost a full-time job for one of my analysts. We end up with different answers to the same basic questions, which erodes trust in the data and slows down strategic decision-making. We're spending too much time on manual reconciliation and firefighting data discrepancies.
+
+Alex: That's a classic bottleneck. It sounds like the manual effort required is quite significant, not just in terms of labor hours, but also the ripple effect on decision velocity and data confidence. Beyond the consistency, are there other areas where your current data processes are impacting your ability to innovate or scale?
+
+Ryan Kane: Absolutely. The other major pain point is the time it takes to build new data pipelines or modify existing ones. Any time a new data source needs to be integrated, or a new transformation is required for a specific business report, it goes into a backlog with our engineering team. They're already swamped with core product development, so our data team often waits weeks, sometimes months, for critical data infrastructure work. This directly impacts our ability to provide timely analytics, especially for our product team who need rapid iteration feedback. We just can't keep up with the demands.
+
+Alex: So, if I'm hearing you correctly, you're grappling with a trifecta of issues: inconsistent data across critical business functions, significant manual effort to reconcile discrepancies, and a slow, engineering-dependent process for data pipeline development, all of which ultimately hinder timely insights and strategic agility. Is that a fair summary?
+
+Ryan Kane: That's a pretty accurate summary, yes. And as a SaaS company, we live and die by our ability to understand our users and iterate quickly. These data issues are directly impacting that.
+
+Alex: Thanks for clarifying that, Ryan. It really helps me understand the scope. Given these challenges, what would an ideal future look like for Escobar-Davis in terms of your data operations? What kind of impact would a solution that addresses these issues have on your role and the business?
+
+Ryan Kane: The ideal future would be my team spending less time on ETL and data wrangling, and more time on actual analysis and driving insights. We need a system that can ingest data from our various SaaS tools, clean and transform it, and present a consistent, reliable single source of truth without constant engineering intervention. It would mean faster time-to-insight for our product and marketing teams, better-informed decisions across the board, and ultimately, a more efficient and scalable data function as we continue to grow towards that 5000-employee mark.
+
+Alex: That's a powerful vision. It sounds like moving towards greater automation and self-service capabilities for your data team is critical. Now, Ryan, when you initially reached out, and even with the recent follow-up, it signals that this is a priority. Can you share a bit about where you are in the decision process internally? Do you have an allocated budget for addressing these kinds of challenges?
+
+Ryan Kane: Yes, it's definitely a priority again. We actually had some budget approved towards the end of Q1 specifically for data infrastructure improvements. The delay was more about internal resource allocation than budget. We've assessed the ROI of solving these problems, and the cost of *not* solving them is becoming too high. So, yes, we have budget confirmed for a solution that can deliver on what we need.
+
+Alex: Excellent, that's really helpful to know. And in terms of timeline, if you were to find the right solution, what would be an ideal timeframe for implementation? Are we talking weeks, months, or something more immediate?
+
+Ryan Kane: We're looking to move fairly quickly now. Our goal is to have something in place and demonstrating value by the end of Q3. So, we'd ideally want to be making a decision and starting implementation within the next 6-8 weeks. We're actively evaluating a few options right now.
+
+Alex: That's a very clear timeline. And who else from Escobar-Davis would typically be involved in evaluating and approving a solution like this? Would it just be your team, or would engineering leadership, finance, or even an executive sponsor be part of the final decision?
+
+Ryan Kane: For the initial evaluation, it's primarily my senior data engineers and myself. Once we narrow it down to a couple of strong contenders, our VP of Engineering, Sarah Chen, would definitely get involved, particularly from a technical integration and security standpoint. For final sign-off, it would be me and then our CFO, David Lee, since it's a significant spend.
+
+Alex: Got it. So, a phased approach involving your team, then engineering leadership, and finally executive/finance sign-off. That's a pretty standard process. Ryan, based on everything you've shared about the consistency issues, the reliance on engineering, and your need for faster, more reliable insights, I'm confident that [Your Company Name]'s platform could be a really strong fit for Escobar-Davis. What I'd love to do as a next step is to schedule a more in-depth, tailored demonstration. This wouldn't be a generic overview, but rather a focused session where we can show you exactly how our platform addresses those specific pain points you raised, like unifying customer data from Salesforce, Amplitude, and Marketo, and empowering your team to build pipelines without constant engineering support. We could also bring in one of our solution architects to dive deeper into the technical aspects and answer any questions your senior data engineers might have. How does that sound?
+
+Ryan Kane: That sounds good, Alex. A tailored demo focusing on those specific integrations and the self-service aspect for my team would be very valuable. We've seen a few generic demos recently, and they don't always hit the mark on our specific challenges.
+
+Alex: Absolutely. We pride ourselves on making these sessions highly relevant. What's your calendar like next week? Would Tuesday or Thursday work better for a 45-60 minute session?
+
+Ryan Kane: Let me quickly check... Thursday morning looks open for me. Say, 10 AM Pacific? I could also invite my lead data engineer, Maria, to that.
+
+Alex: Perfect, Thursday at 10 AM Pacific it is. I'll send over a calendar invite right after this call with a brief agenda, and I'll make sure to include a solutions architect to address any deeper technical questions Maria might have. I'll also outline what we'll cover to ensure it's specifically focused on your needs. Does that work for you?
+
+Ryan Kane: That works great, Alex. Looking forward to it.
+
+Alex: Fantastic, Ryan. Really appreciate your time and candor today. I'm excited about the possibility of helping Escobar-Davis solve these data challenges. Have a great rest of your day!
+
+Ryan Kane: You too, Alex. Talk soon.

@@ -1,0 +1,74 @@
+GONG CALL TRANSCRIPT
+====================
+Lead ID:    13
+Contact:    Michael Blair
+Title:      CEO
+Company:    Clark Inc
+Industry:   Cybersecurity
+Employees:  2781
+Revenue:    $170,674
+Source:     Partner Referral
+Has Budget: False
+====================
+
+**Alex:** (Upbeat, professional tone) Good afternoon, Michael? It's Alex from FortifyAI. How are you today?
+
+**Michael Blair:** Good afternoon, Alex. I'm doing well, thanks. Busy as usual. Yourself?
+
+**Alex:** Can't complain! Thanks for taking the time. I know you're a busy man, especially at Clark Inc. The reason for my call, as you know, is that John Davies over at SecurePath mentioned your name and thought it would be valuable for us to connect. He spoke very highly of Clark Inc and the work you're doing in the managed security space.
+
+**Michael Blair:** Ah, John. Yes, good guy. We've collaborated on a few projects. What exactly did he suggest we talk about?
+
+**Alex:** Well, John and I were discussing the challenges companies like Clark Inc are facing, particularly around maintaining optimal internal security operations while simultaneously scaling your client services. He mentioned you were looking at ways to potentially streamline your threat detection and response capabilities, and thought our AI-driven platform at FortifyAI might be relevant. But of course, I wanted to hear it from you directly.
+
+**Michael Blair:** That's...fairly accurate, actually. We're always evaluating our internal processes. Running a cybersecurity company means we can't afford any weak links ourselves. What exactly does FortifyAI do?
+
+**Alex:** Absolutely, that makes perfect sense. Before I dive into our specifics, I’d love to understand a bit more about what prompted John’s referral. From your perspective, what are some of the biggest priorities or perhaps even challenges Clark Inc is focusing on right now when it comes to your own internal cybersecurity posture, or even how you manage your offerings? With close to 3,000 employees and growing, I imagine complexity is a factor.
+
+**Michael Blair:** You hit the nail on the head there, Alex. Complexity is a huge factor. We manage an incredibly diverse tech stack internally, partly because we're also testing and integrating new technologies for our clients. Our SOC team, while brilliant, is constantly battling alert fatigue. We're getting thousands of alerts daily, and a significant portion turns out to be false positives or low-priority events that still require human review. It's draining resources and, frankly, slowing down our response to actual critical threats.
+
+**Alex:** I hear that often, Michael. Alert fatigue and the sheer volume of data security teams are sifting through is a massive problem. So, just to clarify, is the primary pain point for Clark Inc around the efficiency of your internal Security Operations Center, specifically with managing the deluge of alerts and prioritizing true threats?
+
+**Michael Blair:** Precisely. It’s about efficiency, but also about talent retention. Our senior analysts are spending too much time on Level 1 and 2 tasks when they should be focused on strategic threat hunting or developing new playbooks. We've seen some burnout, and in this market, keeping top talent is incredibly challenging. Another aspect is integration – we've got various tools, SIEM, EDR, SOAR, all doing their job, but they don't always "talk" to each other as seamlessly as we'd like. Getting a unified picture, especially during an incident, is harder than it should be.
+
+**Alex:** That's a critical point – the impact on your human capital. If I'm understanding correctly, the ripple effect of this alert fatigue and integration challenge means increased operational costs due to inefficiency, potential delays in incident response, and a struggle to keep your most valuable team members engaged and focused on high-value work. Is that an accurate summary of the consequences you're seeing?
+
+**Michael Blair:** That's a spot-on assessment, Alex. If we could automate more of the initial triage, correlate disparate alerts faster, and free up our experts, it would be a game-changer for our internal security posture and also improve our ability to demonstrate superior security practices to our clients. We live and breathe this stuff, so we have to lead by example.
+
+**Alex:** Absolutely. And when you think about addressing these challenges, Michael, where does this initiative sit in terms of priority for Clark Inc right now? Are you actively exploring solutions, or is this more in the early research phase?
+
+**Michael Blair:** We are actively exploring. We've had internal discussions for the past few months. The leadership team agrees something needs to be done. We're currently mapping out our requirements and looking at what's available in the market. It's not just a "nice to have"; it's becoming a strategic imperative for us to continue scaling effectively.
+
+**Alex:** That's very helpful to know. Since you're actively exploring, are there any key criteria or capabilities you're prioritizing in a potential solution? For instance, is it mainly about automation, threat intelligence integration, or something else entirely?
+
+**Michael Blair:** It's a combination. Automation is key, as I mentioned. We also need something that can integrate relatively easily with our existing architecture – we can't rip and replace everything. And frankly, the ability to adapt to new and evolving threats without constant manual tuning is crucial. Our clients expect us to be at the bleeding edge, so our internal tools need to reflect that. We've looked at some point solutions, but we're really hoping for something that can act as a force multiplier across our existing stack.
+
+**Alex:** Got it. And in terms of timelines, Michael, what's the general expectation for when you'd ideally like to have a solution in place, or at least be making significant progress towards a decision?
+
+**Michael Blair:** We're aiming to make a decision by the end of Q3 this year, with a view to starting implementation early next year. We're still in the initial stages of budgeting for this, but the executive team is supportive of the investment required to solve these issues. We understand quality solutions come with a cost.
+
+**Alex:** That's a clear timeline. It sounds like a well-thought-out process. I appreciate your transparency on that. Just to confirm, when you say "budgeting," does that mean you haven't formally allocated funds yet, but there's an internal understanding that capital will be made available for the right solution?
+
+**Michael Blair:** That's correct. We're quantifying the ROI internally – the cost of inefficiency, talent loss, and potential breaches versus the investment. So, while no PO has been raised, the strategic intent is there. My main concern, to be honest, is finding something that truly delivers on its promises without adding another layer of complexity to manage. We've seen a lot of "AI" solutions that are more hype than help.
+
+**Alex:** That's a very valid concern, Michael, especially in this space. It's exactly why we focus heavily on proof of value and seamless integration. Based on everything you've shared – the alert fatigue, integration challenges, impact on talent, the need for automation and future-proofing, and your Q3 timeline – I believe a deeper dive into how FortifyAI specifically addresses these points would be highly beneficial. Our platform is designed to sit on top of your existing tools, providing that correlation and automated triage you mentioned, reducing false positives by up to 80% for some clients, and freeing up your analysts.
+
+**Michael Blair:** Eighty percent is a big claim.
+
+**Alex:** It is, and we have the case studies to back it up. What I'd suggest as a logical next step, if you're open to it, is a more focused 30-minute demonstration. I could walk you through exactly how our platform ingests data, correlates alerts using our AI engine, and then automates the initial investigation and prioritization. We could focus on specific scenarios relevant to Clark Inc's challenges. Would you be open to that sometime next week?
+
+**Michael Blair:** Hmm, 30 minutes. I could probably squeeze that in. Who else from my team should be there? My Head of SOC Operations, Sarah Jenkins, would be critical, and perhaps my CTO, David Lee, might want to chime in on the integration aspects.
+
+**Alex:** Excellent suggestions. Having Sarah and David there would be ideal to ensure all key stakeholders get their questions answered and see how it fits their specific needs. How does Thursday next week, say 11 AM Pacific, look for you and your team?
+
+**Michael Blair:** Let me check... Thursday at 11 AM. Yes, that could work. I'll ask my assistant to send out a calendar invite with Sarah and David.
+
+**Alex:** Perfect. I'll send over a brief agenda and a confirmation email right after this call, Michael. Really appreciate your time and candor today. This has been a very insightful conversation.
+
+**Michael Blair:** You too, Alex. Thanks. Looking forward to learning more.
+
+**Alex:** Likewise. Have a great rest of your day!
+
+**Michael Blair:** You too. Bye now.
+
+**(Call ends - Total time approx. 9 minutes 30 seconds)**
