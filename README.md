@@ -119,7 +119,7 @@ GTM_AGENTIC_AI_ENGINE/
 
 ---
 
-## 🔗 Webhook Endpoint
+## 🔗 Webhook Endpoint (n8n / Zapier)
 `POST /webhook` accepts inbound intent signals from any platform that supports outbound HTTP — HubSpot, Salesforce, n8n, Zapier, Slack, or any custom service.
 
 **Request format:**
