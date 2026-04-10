@@ -1,6 +1,6 @@
 # 🚀 GTM Agentic AI Engine
 Autonomous revenue engine that scores, routes, and acts on CRM leads. 
-Built on a 5 layer architecture that takes raw CRM data and Gong transcripts, scores every lead using an LLM judge, runs autonomous AI agents to make routing decisions, and dispatches the results to reps via a production-ready REST API.
+Built on a 5 layer architecture that takes raw 𝐂𝐑𝐌 𝐝𝐚𝐭𝐚 and 𝐆𝐨𝐧𝐠 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐩𝐭𝐬, scores every lead using an LLM judge, runs 𝟑 𝐚𝐮𝐭𝐨𝐧𝐨𝐦𝐨𝐮𝐬 𝐀𝐈 𝐚𝐠𝐞𝐧𝐭𝐬 to make routing decisions, and dispatches the results to reps via a production ready REST API.
 
 ---
 
