@@ -7,6 +7,7 @@ def get_llm():
     return LLM(
         model="gemini/gemini-2.5-flash",
         api_key=os.environ.get("GEMINI_API_KEY"),
+        temperature=0.2,
     )
 
 
